@@ -93,7 +93,7 @@ const About: React.FC = () => {
 
             <div className="md:col-span-8 lg:col-span-9">
               <blockquote className="text-2xl md:text-3xl font-light text-white leading-relaxed mb-8">
-                "In einer Branche, die von Unvorhersehbarkeit geprägt ist, ist Datenhoheit die einzige Währung, die zählt. Wir haben BauOne nicht gegründet, um besser zu bauen, sondern um das Bauen <span className="text-cyan-400 font-medium">berechenbarer</span> zu machen."
+                "In einer Branche, die von Unvorhersehbarkeit geprägt ist, ist Datenhoheit die einzige Währung, die zählt. Wir haben BauOne nicht nur gegründet, um besser zu bauen, sondern um das Bauen <span className="text-cyan-400 font-medium">berechenbarer</span> zu machen."
               </blockquote>
               
               <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 border-t border-white/10 pt-8">
