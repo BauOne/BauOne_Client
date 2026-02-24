@@ -20,7 +20,7 @@ const Innovation: React.FC = () => {
               <h2 className="text-cyan-400 font-bold uppercase tracking-widest text-[10px] font-mono">The Digital Core</h2>
             </div>
             
-            <h3 className="text-5xl lg:text-6xl font-bold text-white mb-8 tracking-tighter leading-[1.1]">
+            <h3 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-8 tracking-tighter leading-[1.1] break-words">
               Vom Daten-Chaos zur <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 italic">digitalen Handlungssicherheit.</span>
             </h3>
@@ -30,7 +30,7 @@ const Innovation: React.FC = () => {
             </p>
 
             <div className="space-y-8">
-               <div className="flex gap-6 group">
+               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 group">
                  <div className="w-16 h-16 rounded-3xl bg-slate-900 flex items-center justify-center flex-shrink-0 border border-white/10 group-hover:border-cyan-500/50 transition-all shadow-[0_0_20px_rgba(0,0,0,0.3)]">
                     <Binary className="text-cyan-400 w-8 h-8" />
                  </div>
@@ -39,7 +39,7 @@ const Innovation: React.FC = () => {
                               <p className="text-sm text-slate-500 leading-relaxed">Wir verarbeiten unterschiedliche Eingangsformate: von Planständen und Excel bis zu IFC-Modellen. So bleibt der Informationsfluss konsistent.</p>
                  </div>
                </div>
-               <div className="flex gap-6 group">
+               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 group">
                  <div className="w-16 h-16 rounded-3xl bg-slate-900 flex items-center justify-center flex-shrink-0 border border-white/10 group-hover:border-blue-500/50 transition-all shadow-[0_0_20px_rgba(0,0,0,0.3)]">
                     <Cpu className="text-blue-400 w-8 h-8" />
                  </div>
@@ -52,14 +52,14 @@ const Innovation: React.FC = () => {
           </div>
 
           {/* RIGHT COLUMN: The Data Refinery Visualization */}
-          <div className="relative">
+          <div className="relative px-1 sm:px-0">
             {/* Background Glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-cyan-500/5 blur-[100px] rounded-full -z-10"></div>
 
             <div className="relative flex flex-col items-center">
               
               {/* STAGE 1: RAW INPUT (Messy, Grey) */}
-              <div className="w-full max-w-md bg-slate-900/80 backdrop-blur-md border border-white/10 rounded-2xl p-6 relative z-10">
+              <div className="w-full max-w-md bg-slate-900/80 backdrop-blur-md border border-white/10 rounded-2xl p-4 sm:p-6 relative z-10">
                  <div className="absolute -left-3 top-1/2 -translate-y-1/2 w-1 h-12 bg-slate-700 rounded-full"></div>
                  <h4 className="text-slate-400 font-bold text-[10px] uppercase tracking-widest mb-4 font-mono flex justify-between">
                     <span>01. Ingest (Raw Data)</span>
@@ -91,7 +91,7 @@ const Innovation: React.FC = () => {
               </div>
 
               {/* STAGE 2: THE PROCESSOR (Glowing, Active) */}
-              <div className="w-full max-w-md bg-slate-900/90 backdrop-blur-xl border border-cyan-500/30 rounded-2xl p-8 relative z-20 shadow-[0_0_40px_rgba(6,182,212,0.1)]">
+              <div className="w-full max-w-md bg-slate-900/90 backdrop-blur-xl border border-cyan-500/30 rounded-2xl p-5 sm:p-8 relative z-20 shadow-[0_0_40px_rgba(6,182,212,0.1)]">
                  <div className="absolute -left-3 top-1/2 -translate-y-1/2 w-1 h-16 bg-cyan-500 rounded-full shadow-[0_0_10px_#06b6d4]"></div>
                  <div className="absolute inset-0 bg-gradient-to-b from-cyan-500/5 to-blue-600/5 rounded-2xl"></div>
                  
@@ -106,7 +106,7 @@ const Innovation: React.FC = () => {
                     </div>
                  </div>
 
-                 <div className="flex items-center gap-6 py-4">
+                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 py-4">
                     <div className="w-16 h-16 rounded-full border-2 border-cyan-500/30 flex items-center justify-center relative">
                        <div className="absolute inset-0 border-t-2 border-cyan-400 rounded-full animate-spin"></div>
                        <Cpu className="w-8 h-8 text-white" />
@@ -119,7 +119,7 @@ const Innovation: React.FC = () => {
                           <span>Normalizing Geometry...</span>
                           <span>85%</span>
                        </div>
-                       <div className="flex gap-2 mt-2">
+                       <div className="flex flex-wrap gap-2 mt-2">
                           <span className="px-2 py-1 bg-cyan-950 border border-cyan-500/20 rounded text-[9px] text-cyan-400">IFC 4.0</span>
                           <span className="px-2 py-1 bg-cyan-950 border border-cyan-500/20 rounded text-[9px] text-cyan-400">PDF</span>
                           <span className="px-2 py-1 bg-cyan-950 border border-cyan-500/20 rounded text-[9px] text-cyan-400">Excel</span>
@@ -135,9 +135,9 @@ const Innovation: React.FC = () => {
               </div>
 
               {/* STAGE 3: OUTPUT (Clean, Valuable) */}
-              <div className="w-full max-w-2xl bg-gradient-to-br from-slate-900 to-slate-800 border border-white/10 rounded-2xl p-6 relative z-10 group hover:border-emerald-500/50 transition-colors">
+              <div className="w-full max-w-2xl bg-gradient-to-br from-slate-900 to-slate-800 border border-white/10 rounded-2xl p-4 sm:p-6 relative z-10 group hover:border-emerald-500/50 transition-colors">
                  <div className="absolute -left-3 top-1/2 -translate-y-1/2 w-1 h-12 bg-emerald-500 rounded-full"></div>
-                 <h4 className="text-emerald-400 font-bold text-[10px] uppercase tracking-widest mb-4 font-mono flex justify-between">
+                 <h4 className="text-emerald-400 font-bold text-[10px] uppercase tracking-widest mb-4 font-mono flex items-center justify-between gap-3">
                     <span>03. Management Value</span>
                     <span className="text-white">Actionable</span>
                  </h4>

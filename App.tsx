@@ -14,6 +14,7 @@ import CookieConsentBanner from './components/CookieConsentBanner';
 import { Settings, BarChart3, Building2, Phone } from 'lucide-react';
 import { disableAnalytics, enableAnalytics, isAnalyticsEnabled, trackPageView } from './services/analyticsService';
 import { CONSENT_RESET_EVENT, getConsentState, setConsentState } from './services/consentService';
+import { siteContent } from './content/siteContent';
 
 export type View = 'home' | 'projects' | 'legal';
 
@@ -55,6 +56,51 @@ function App() {
 
     const pagePath = currentView === 'home' ? '/' : `/${currentView}`;
     trackPageView(pagePath);
+  }, [currentView]);
+
+  useEffect(() => {
+    const baseUrl = siteContent.seo.canonicalUrl.replace(/\/$/, '');
+    const seoByView: Record<View, { title: string; description: string; path: string }> = {
+      home: {
+        title: siteContent.seo.title,
+        description: siteContent.seo.description,
+        path: '/',
+      },
+      projects: {
+        title: 'Referenzen | BauOne Ingenieurbüro Behrens',
+        description: 'Ausgewählte Referenzprojekte von BauOne: Projektsteuerung, BIM und technische Umsetzung im anspruchsvollen Hochbau.',
+        path: '/projects',
+      },
+      legal: {
+        title: 'Impressum & Datenschutz | BauOne',
+        description: 'Rechtliche Informationen, Impressum und Datenschutz der Website von BauOne Ingenieurbüro Behrens.',
+        path: '/legal',
+      },
+    };
+
+    const currentSeo = seoByView[currentView];
+    const canonical = `${baseUrl}${currentSeo.path === '/' ? '/' : currentSeo.path}`;
+
+    document.title = currentSeo.title;
+
+    const setMeta = (selector: string, content: string) => {
+      const element = document.querySelector<HTMLMetaElement>(selector);
+      if (element) {
+        element.setAttribute('content', content);
+      }
+    };
+
+    setMeta('meta[name="description"]', currentSeo.description);
+    setMeta('meta[property="og:title"]', currentSeo.title);
+    setMeta('meta[property="og:description"]', currentSeo.description);
+    setMeta('meta[property="og:url"]', canonical);
+    setMeta('meta[name="twitter:title"]', currentSeo.title);
+    setMeta('meta[name="twitter:description"]', currentSeo.description);
+
+    const canonicalLink = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    if (canonicalLink) {
+      canonicalLink.setAttribute('href', canonical);
+    }
   }, [currentView]);
 
   // Handle back-to-top on view change, unless we are navigating to a section
