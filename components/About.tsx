@@ -14,7 +14,7 @@ const About: React.FC = () => {
         
         {/* Main Introduction Grid */}
         <div className="grid lg:grid-cols-2 gap-16 items-start mb-24">
-          <div className="relative lg:mt-36">
+          <div className="relative lg:mt-24">
             <div className="relative z-10 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
               <img 
                 src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200" 

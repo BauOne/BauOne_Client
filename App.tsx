@@ -174,7 +174,7 @@ function App() {
                     </div>
                     <h4 className="text-white font-bold mb-3 uppercase tracking-tight text-lg font-heading">Projektsteuerung mit Ingenieurkompetenz</h4>
                     <p className="text-slate-500 text-sm leading-relaxed font-mono">
-                      Wir führen komplexe Hochbauprojekte mit technischer Expertise, klaren Prozessen und präziser Koordination zum Ziel.
+                      Wir führen komplexe Hochbauprojekte mit technischer Expertise und klaren Prozessen zum Ziel.
                     </p>
                   </div>
 
@@ -184,9 +184,9 @@ function App() {
                     <div className="w-10 h-10 mb-6 flex items-center justify-center bg-blue-500/10 rounded-lg text-blue-400 border border-blue-500/20">
                       <BarChart3 className="w-5 h-5" />
                     </div>
-                    <h4 className="text-white font-bold mb-3 uppercase tracking-tight text-lg font-heading">Digitale Steuerungssicherheit</h4>
+                    <h4 className="text-white font-bold mb-3 uppercase tracking-tight text-lg font-heading">Digitales Controlling</h4>
                     <p className="text-slate-500 text-sm leading-relaxed font-mono">
-                      Wir konsolidieren Daten aus Planung und Ausführung, damit Entscheidungen nachvollziehbar und termingerecht getroffen werden.
+                      Wir führen Daten aus Planung und Ausführung in einem integrierten Steuerungsmodell zusammen.
                     </p>
                   </div>
 
@@ -213,7 +213,7 @@ function App() {
             <Contact />
             
             {/* Final Conversion CTA */}
-            <section className="py-32 bg-slate-950 relative">
+            <section className="py-24 bg-slate-950 relative">
               <div className="max-w-5xl mx-auto px-4 text-center">
                 <div className="inline-block px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-500/20 mb-8">
                    <span className="text-cyan-400 font-bold text-[10px] uppercase tracking-widest font-mono">Projektsteuerung mit klarer Datengrundlage</span>

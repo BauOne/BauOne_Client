@@ -164,7 +164,7 @@ const Services: React.FC<ServicesProps> = ({ onNavigate }) => {
            <div className="bg-slate-950 p-10 flex flex-col items-center text-center group">
               <Zap className="text-cyan-400 w-10 h-10 mb-6 group-hover:scale-110 transition-transform" />
               <h6 className="text-white font-bold text-xl mb-3 font-heading uppercase tracking-tighter">Nachvollziehbare Steuerung</h6>
-             <p className="text-slate-500 text-xs leading-relaxed font-mono">Ein durchgängiger Datenstand macht Abweichungen früh sichtbar und Entscheidungen klar begründbar.</p>
+             <p className="text-slate-500 text-xs leading-relaxed font-mono">Ein durchgängiger Datenstand macht Abweichungen sichtbar und Entscheidungen begründbar.</p>
            </div>
            <div className="bg-slate-950 p-10 flex flex-col items-center text-center group">
               <Briefcase className="text-blue-400 w-10 h-10 mb-6 group-hover:scale-110 transition-transform" />
