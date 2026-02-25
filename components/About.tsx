@@ -3,10 +3,7 @@ import React from 'react';
 import { Target, Zap, Users } from 'lucide-react';
 import { siteContent } from '../content/siteContent';
 
-// --- KONFIGURATION ---
-// Hier können Sie das Bild ändern, ohne im HTML suchen zu müssen.
-// Für maximale Privatsphäre: Bild lokal speichern und hier den Pfad eintragen.
-// Beispiel: const FOUNDER_IMAGE = "/images/mein-profilbild.jpg";
+
 const FOUNDER_IMAGE = `${import.meta.env.BASE_URL}images/geschaeftsfuehrer.jpg`;
 // ---------------------
 

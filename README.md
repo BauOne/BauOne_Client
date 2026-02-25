@@ -4,34 +4,40 @@
 
 # BauOne Webseite
 
-React/Vite-Webseite mit serverseitigem Kontaktformular-Endpoint.
+React/Vite-Webseite für BauOne (Projektsteuerung & Ingenieurmanagement im Hochbau).
 
-## Run Locally
+## Aktueller Kontakt-Flow
 
-**Prerequisites:**  Node.js
+Das Kontaktformular sendet **nicht** über eine API.
+Beim Absenden wird per `mailto` das lokale E-Mail-Programm mit vorausgefülltem Betreff und Nachricht geöffnet.
 
+## Run locally
 
-1. Install dependencies:
+**Voraussetzung:** Node.js
+
+1. Abhängigkeiten installieren:
    `npm install`
-2. Create env file:
-   `copy .env.example .env.local`
-3. Set SMTP values in `.env.local` (`SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `CONTACT_TO`)
-   - Optional Spam-Schutz: `CONTACT_RATE_LIMIT_WINDOW_MS`, `CONTACT_RATE_LIMIT_MAX_REQUESTS`
-   - Optional Tracking: `VITE_GA_MEASUREMENT_ID` (GA4-ID, z. B. `G-XXXXXXXXXX`)
-   - Optional dev fallback: `CONTACT_DEV_FALLBACK=true` (Formular funktioniert ohne SMTP, Anfrage wird in der Server-Konsole ausgegeben)
-4. Start frontend + contact API together:
-   `npm run dev:full`
+2. Frontend starten:
+   `npm run dev`
 
-Frontend läuft standardmäßig auf `http://localhost:3000`, die Kontakt-API auf `http://localhost:8787`.
+Das Frontend läuft lokal i. d. R. unter `http://localhost:3000` (oder dem von Vite gewählten freien Port).
+
+## Build
+
+- Produktionsbuild erstellen:
+  `npm run build`
+- Build lokal prüfen:
+  `npm run preview`
 
 ## Scripts
 
-- `npm run dev` → nur Frontend
-- `npm run dev:api` → nur Kontakt-API
-- `npm run dev:full` → Frontend + API parallel
+- `npm run dev` → Frontend
 - `npm run build` → Produktionsbuild
+- `npm run preview` → Vorschau des Produktionsbuilds
 
-## Cookie & Analytics
+Hinweis: `npm run dev:api` und `npm run dev:full` existieren weiterhin im Projekt, werden vom aktuellen Kontaktformular aber nicht verwendet.
+
+## Analytics & Consent
 
 - Beim ersten Laden erscheint ein Consent-Banner.
 - Google Analytics wird erst nach aktiver Zustimmung geladen.
