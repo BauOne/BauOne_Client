@@ -140,7 +140,7 @@ const Hero: React.FC = () => {
                         <div>
                           <h4 className="text-white font-bold text-sm font-heading flex items-center gap-2">
                             <Activity className="w-4 h-4 text-cyan-400" />
-                            Active Project Monitor
+                            Active Project Monitor (Demo)
                           </h4>
                           <p className="text-[10px] text-slate-400 font-mono mt-0.5">ID: #PROJECT-001</p>
                         </div>
