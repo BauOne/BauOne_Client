@@ -39,7 +39,7 @@ const allProjects = [
     year: "2025",
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200",
     description: "Erweiterung der Unternehmensinfrastruktur mit modernem Verwaltungsgebäude.",
-    scope: "Projektmanagementleistungen einschl. Bauherrenvertretung",
+    scope: "Projektmanagementleistungen",
     phases: ['LP 5', 'LP 6', 'LP 7', 'LP 8'],
     bgf: "ca. 1.500 m²"
   },
@@ -51,7 +51,7 @@ const allProjects = [
     year: "2025",
     image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1200",
     description: "Erweiterung der industriellen Infrastruktur durch ein hochautomatisiertes Logistikzentrum inkl. Hochregallager.",
-    scope: "Projektmanagementleistungen einschl. Bauherrenvertretung",
+    scope: "Projektmanagementleistungen",
     phases: ['LP 5', 'LP 6', 'LP 7', 'LP 8'],
     bgf: "ca. 6.700 m²"
   }

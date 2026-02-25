@@ -28,12 +28,12 @@ const serviceDetails: Record<string, ServiceDetail> = {
     icon: <Target className="w-12 h-12 text-cyan-400" />,
     description: "Wir übernehmen die Steuerung Ihres Projekts auf Bauherrenseite. BauOne verbindet Projektsteuerung nach AHO/HOAI mit digital gestütztem Controlling und einem einheitlichen Datenstand, damit Risiken früher sichtbar und Entscheidungen schneller belastbar werden.",
     mainPoints: [
-      { title: "Projektleitung", text: "Übernahme der Steuerungsverantwortung für Organisation, Kosten und Termine über die relevanten HOAI-Phasen.", icon: <Briefcase className="w-5 h-5" /> },
-      { title: "Strukturiertes Controlling", text: "Laufendes Reporting zu Budget-, Termin- und Qualitätslage mit prüfbarer Datenherkunft als belastbare Grundlage für Steuerungsentscheidungen.", icon: <Activity className="w-5 h-5" /> },
-      { title: "Bauherrenvertretung", text: "Technische und wirtschaftliche Durchsetzung Ihrer Interessen gegenüber allen Projektbeteiligten.", icon: <ShieldCheck className="w-5 h-5" /> }
+      { title: "Organisation & Koordination", text: "Aufbau klarer Entscheidungs- und Kommunikationsstrukturen sowie laufende Koordination aller Projektbeteiligten auf Bauherrenseite.", icon: <Briefcase className="w-5 h-5" /> },
+      { title: "Kosten- und Terminsteuerung", text: "Kontinuierliches Controlling von Budget, Mittelabfluss und Meilensteinen mit prüfbarer Datengrundlage für belastbare Steuerungsentscheidungen.", icon: <Activity className="w-5 h-5" /> },
+      { title: "Vertrags- und Nachtragsmanagement", text: "Strukturierte Begleitung von Vergabe-, Vertrags- und Nachtragsprozessen für mehr Sicherheit in Qualität, Kosten und Terminen.", icon: <ShieldCheck className="w-5 h-5" /> }
     ],
     techStack: ["Projekt-Dashboards", "Risikobewertung", "Cloud-CDE", "BIM-basierte Auswertung"],
-    process: ["Bedarfsplanung", "Strukturierte Vergabe", "Laufende Steuerung", "Geordnete Übergabe"]
+    process: ["Projektvorbereitung", "Planung", "Ausführungsvorbereitung", "Ausführung", "Projektabschluss"]
   },
   es: {
     id: 'es',
@@ -68,7 +68,7 @@ const serviceDetails: Record<string, ServiceDetail> = {
 };
 
 const pillars = [
-  { id: 'pm', title: "Projektsteuerung", for: "Für Bauherren", subtitle: "Wir steuern mit klarer Verantwortung.", icon: <Target className="w-8 h-8 text-cyan-400" />, description: "Komplexe Hochbauprojekte brauchen eine unabhängige Steuerung. Mit digitalem Controlling schaffen wir frühzeitige Transparenz und belastbare Entscheidungen.", items: ["Einheitlicher Datenstand", "Strukturiertes Controlling", "Klarere Nachtragsbasis", "Bauherrenvertretung"] },
+  { id: 'pm', title: "Projektsteuerung", for: "Für Bauherren", subtitle: "Wir steuern mit klarer Verantwortung.", icon: <Target className="w-8 h-8 text-cyan-400" />, description: "Komplexe Hochbauprojekte brauchen eine unabhängige Steuerung. Mit digitalem Controlling schaffen wir frühzeitige Transparenz und belastbare Entscheidungen.", items: ["Organisation & Koordination", "Kosten- und Terminsteuerung", "Vertrags- und Nachtragsmanagement"] },
   { id: 'es', title: "Ausführungsunterstützung", for: "Für Generalunternehmen", subtitle: "Präzision in der Ausführung.", icon: <HardHat className="w-8 h-8 text-blue-400" />, description: "Wir unterstützen GUs in der Baustellensteuerung – von der Taktplanung bis zur lückenlosen Dokumentation für weniger Stillstand und Nacharbeit.", items: ["Modellbasierte Terminprognosen", "BIM-gestütztes Monitoring", "Mengenprüfung", "Schnellere Freigaben"] },
   { id: 'bm', title: "BIM-Koordination", for: "Für Planer", subtitle: "Das digitale Fundament.", icon: <PenTool className="w-8 h-8 text-purple-400" />, description: "Wir unterstützen Planer bei belastbaren BIM-Prozessen – mit klaren Datenstrukturen, koordinierbaren Modellen und früher Konfliktlösung.", items: ["BIM-Gesamtkoordination", "Kollisionsprüfungen", "EIR/BAP-Struktur", "Datenintegration"] }
 ];
