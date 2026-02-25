@@ -125,7 +125,7 @@ const Hero: React.FC = () => {
                       <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
                       <div className="w-2 h-2 rounded-full bg-green-500"></div>
                    </div>
-                   <div className="text-[9px] font-mono text-cyan-400">BAUONE_V4.0_LIVE_FEED</div>
+                   <div className="text-[9px] font-mono text-cyan-400">BAUONE_V4.0_PROJECT_MONITOR</div>
                 </div>
 
                 {/* "Clean" Single Dashboard Card instead of scattered boxes */}
@@ -142,7 +142,7 @@ const Hero: React.FC = () => {
                             <Activity className="w-4 h-4 text-cyan-400" />
                             Active Project Monitor
                           </h4>
-                          <p className="text-[10px] text-slate-400 font-mono mt-0.5">ID: #FRA-TWR-24</p>
+                          <p className="text-[10px] text-slate-400 font-mono mt-0.5">ID: #PROJECT-001</p>
                         </div>
                         <div className="px-2 py-1 bg-emerald-500/10 border border-emerald-500/20 rounded text-[9px] text-emerald-400 font-bold font-mono">
                           SYNCED
@@ -153,7 +153,7 @@ const Hero: React.FC = () => {
                         <div>
                             <p className="text-[9px] text-slate-500 uppercase tracking-widest mb-1 font-mono">Kostenstatus</p>
                           <div className="flex items-end gap-2">
-                                <span className="text-xl font-bold text-white">Gepüft</span>
+                                <span className="text-xl font-bold text-white">Geprüft</span>
                              <div className="flex-1 h-1.5 bg-slate-800 rounded-sm mb-1.5 overflow-hidden">
                                 <motion.div 
                                   initial={{ width: 0 }}
