@@ -2,7 +2,6 @@
 import React from 'react';
 import { Linkedin, Twitter, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 import { View } from '../App';
-import Logo from './Logo';
 import { siteContent } from '../content/siteContent';
 import { clearConsentState, CONSENT_RESET_EVENT } from '../services/consentService';
 
@@ -12,6 +11,7 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   const currentYear = new Date().getFullYear();
+  const logoSrc = `${import.meta.env.BASE_URL}brand/logo-mark.svg`;
   const socialLinks = [
     { href: siteContent.social.linkedin, label: 'LinkedIn', Icon: Linkedin },
     { href: siteContent.social.x, label: 'X', Icon: Twitter },
@@ -30,7 +30,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center gap-3 mb-6 cursor-pointer group" onClick={() => onNavigate('home', '#top')}>
               <div className="w-10 h-10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                <Logo className="w-full h-full" />
+                <img src={logoSrc} alt="BauOne Logo" className="w-full h-full" />
               </div>
               <span className="text-2xl font-bold tracking-tighter text-white font-heading">
                 Bau<span className="text-cyan-400">One</span>

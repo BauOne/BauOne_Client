@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" shape-rendering="crispEdges">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" shape-rendering="crispEdges" role="img" aria-label="BauOne Logo Mark">
   <defs>
-    <linearGradient id="logo-gradient" x1="60" y1="10" x2="60" y2="90" gradientUnits="userSpaceOnUse">
+    <linearGradient id="bauone-logo-gradient" x1="60" y1="10" x2="60" y2="90" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#22d3ee" />
       <stop offset="100%" stop-color="#3b82f6" />
     </linearGradient>
@@ -10,6 +10,6 @@
   <rect x="35" y="45" width="25" height="15" fill="#ffffff" />
   <rect x="35" y="75" width="25" height="15" fill="#ffffff" />
 
-  <rect x="65" y="10" width="20" height="80" fill="url(#logo-gradient)" />
+  <rect x="65" y="10" width="20" height="80" fill="url(#bauone-logo-gradient)" />
   <rect x="45" y="10" width="20" height="15" fill="#22d3ee" />
 </svg>

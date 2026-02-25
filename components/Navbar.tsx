@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { View } from '../App';
-import Logo from './Logo';
 
 interface NavbarProps {
   onNavigate: (view: View, sectionId?: string) => void;
@@ -11,6 +10,7 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const logoSrc = `${import.meta.env.BASE_URL}brand/logo-mark.svg`;
 
   const navLinks = [
     { name: 'Home', href: '#top', view: 'home' as View },
@@ -37,7 +37,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
             onClick={() => handleNavClick('home', '#top')}
           >
             <div className="w-10 h-10 flex items-center justify-center group-hover:scale-110 transition-transform">
-               <Logo className="w-full h-full" />
+              <img src={logoSrc} alt="BauOne Logo" className="w-full h-full" />
             </div>
             <span className="text-2xl font-bold tracking-tighter text-white font-heading">
               Bau<span className="text-cyan-400">One</span>
