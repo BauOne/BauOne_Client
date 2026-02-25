@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.7 }}
               className="text-xl text-slate-400 max-w-2xl mb-12 leading-relaxed font-light border-l border-white/10 pl-6"
             >
-              Wir steuern komplexe Hochbauprojekte mit einem einheitlichen digitalen Datenstand, damit Entscheidungen zu Kosten, Terminen und Qualität jederzeit belastbar und nachweisfähig getroffen werden können.
+              Wir steuern komplexe Hochbauprojekte mit einem einheitlichen digitalen Datenstand, sodass Entscheidungen zu Kosten, Terminen und Qualität schnell, belastbar und nachvollziehbar sind.
             </motion.p>
             
             <motion.div 
@@ -151,9 +151,9 @@ const Hero: React.FC = () => {
 
                       <div className="grid grid-cols-2 gap-4">
                         <div>
-                          <p className="text-[9px] text-slate-500 uppercase tracking-widest mb-1 font-mono">BIM Integrity</p>
+                            <p className="text-[9px] text-slate-500 uppercase tracking-widest mb-1 font-mono">Kostenstatus</p>
                           <div className="flex items-end gap-2">
-                             <span className="text-xl font-bold text-white">Geprüft</span>
+                                <span className="text-xl font-bold text-white">Gepüft</span>
                              <div className="flex-1 h-1.5 bg-slate-800 rounded-sm mb-1.5 overflow-hidden">
                                 <motion.div 
                                   initial={{ width: 0 }}

@@ -29,10 +29,6 @@ const Innovation: React.FC = () => {
                Bauprojekte verlieren Zeit und Budget, wenn Informationen verteilt und unvollständig sind. Wir führen Daten strukturiert zusammen, damit Risiken früher erkannt und Entscheidungen schneller belastbar getroffen werden.
             </p>
 
-                  <p className="text-sm text-slate-500 mb-10 leading-relaxed font-mono border-l border-cyan-500/40 pl-4">
-                     Unser Unterschied: Wir nutzen digitale Methoden nicht als Zusatztool, sondern als durchgängigen Steuerungsprozess zwischen Planung, Ausführung und Reporting.
-                  </p>
-
             <div className="space-y-8">
                <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 group">
                  <div className="w-16 h-16 rounded-3xl bg-slate-900 flex items-center justify-center flex-shrink-0 border border-white/10 group-hover:border-cyan-500/50 transition-all shadow-[0_0_20px_rgba(0,0,0,0.3)]">
@@ -124,7 +120,7 @@ const Innovation: React.FC = () => {
                           <span>85%</span>
                        </div>
                        <div className="flex flex-wrap gap-2 mt-2">
-                          <span className="px-2 py-1 bg-cyan-950 border border-cyan-500/20 rounded text-[9px] text-cyan-400">IFC 4.0</span>
+                          <span className="px-2 py-1 bg-cyan-950 border border-cyan-500/20 rounded text-[9px] text-cyan-400">IFC</span>
                           <span className="px-2 py-1 bg-cyan-950 border border-cyan-500/20 rounded text-[9px] text-cyan-400">PDF</span>
                           <span className="px-2 py-1 bg-cyan-950 border border-cyan-500/20 rounded text-[9px] text-cyan-400">Excel</span>
                           <span className="px-2 py-1 bg-cyan-950 border border-cyan-500/20 rounded text-[9px] text-cyan-400">Plausibilisierung</span>
@@ -156,7 +152,7 @@ const Innovation: React.FC = () => {
                           <span className="text-[9px] text-emerald-300 font-mono">01</span>
                        </div>
                        <div className="text-sm font-bold text-white mb-1 leading-tight">Früh erkannt</div>
-                       <p className="text-[10px] text-slate-500 font-mono leading-relaxed">Abweichungen werden vor Eskalation priorisiert und dokumentiert.</p>
+                       <p className="text-[10px] text-slate-500 font-mono leading-relaxed">Kostenabweichungen werden früh priorisiert und transparent dokumentiert.</p>
                     </div>
                     <div className="bg-slate-950 p-4 rounded-lg border border-blue-500/20 min-h-[118px] flex flex-col justify-between">
                        <div className="flex items-center justify-between mb-2">
