@@ -21,6 +21,12 @@ const ensureGtagBootstrap = (measurementId: string) => {
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function gtag(...args: unknown[]) { window.dataLayer.push(args); };
   window.gtag('js', new Date());
+  window.gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+  });
   window.gtag('config', measurementId, {
     anonymize_ip: true,
     send_page_view: false,
@@ -30,7 +36,16 @@ const ensureGtagBootstrap = (measurementId: string) => {
 export const isAnalyticsEnabled = () => Boolean(activeMeasurementId);
 
 export const enableAnalytics = (measurementId: string | undefined) => {
-  if (!measurementId || activeMeasurementId === measurementId) {
+  if (!measurementId) {
+    return;
+  }
+
+  if (activeMeasurementId === measurementId) {
+    if (typeof window.gtag === 'function') {
+      window.gtag('consent', 'update', {
+        analytics_storage: 'granted',
+      });
+    }
     return;
   }
 
@@ -39,6 +54,9 @@ export const enableAnalytics = (measurementId: string | undefined) => {
   }
 
   ensureGtagBootstrap(measurementId);
+  window.gtag('consent', 'update', {
+    analytics_storage: 'granted',
+  });
   activeMeasurementId = measurementId;
 };
 
@@ -59,6 +77,9 @@ export const disableAnalytics = () => {
   if (window.gtag) {
     window.gtag('consent', 'update', {
       analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
     });
   }
 };
