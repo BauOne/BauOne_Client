@@ -26,14 +26,21 @@ const serviceDetails: Record<string, ServiceDetail> = {
     for: "Für Bauherren",
     subtitle: "Projektsteuerung mit klarer Verantwortung und digitaler Entscheidungsgrundlage.",
     icon: <Target className="w-12 h-12 text-cyan-400" />,
-    description: "Wir übernehmen die Steuerung Ihres Projekts auf Bauherrenseite. BauOne verbindet Projektsteuerung nach AHO/HOAI mit digital gestütztem Controlling und einem einheitlichen Datenstand, damit Risiken früher sichtbar und Entscheidungen schneller belastbar werden.",
+    description: "Wir übernehmen die Steuerung Ihres Projekts auf Bauherrenseite. BauOne verbindet Projektsteuerung nach AHO/HOAI mit digital gestütztem Controlling und einem einheitlichen Datenstand, damit Risiken früher sichtbar und Entscheidungen schneller vorbereitet werden.",
     mainPoints: [
       { title: "Organisation & Koordination", text: "Aufbau klarer Entscheidungs- und Kommunikationsstrukturen sowie laufende Koordination aller Projektbeteiligten auf Bauherrenseite.", icon: <Briefcase className="w-5 h-5" /> },
-      { title: "Kosten- und Terminsteuerung", text: "Kontinuierliches Controlling von Budget, Mittelabfluss und Meilensteinen mit prüfbarer Datengrundlage für belastbare Steuerungsentscheidungen.", icon: <Activity className="w-5 h-5" /> },
-      { title: "Vertrags- und Nachtragsmanagement", text: "Strukturierte Begleitung von Vergabe-, Vertrags- und Nachtragsprozessen für mehr Sicherheit in Qualität, Kosten und Terminen.", icon: <ShieldCheck className="w-5 h-5" /> }
+      { title: "Kosten- und Terminsteuerung", text: "Kontinuierliches Controlling von Budget, Mittelabfluss und Meilensteinen mit prüfbarer Datengrundlage für sichere Steuerungsentscheidungen.", icon: <Activity className="w-5 h-5" /> },
+      { title: "Vertrags- und Nachtragsmanagement", text: "Strukturierte Begleitung von Vergabe-, Vertrags- und Nachtragsprozessen für mehr Sicherheit in Qualität, Kosten und Terminen.", icon: <ShieldCheck className="w-5 h-5" /> },
+      { title: "BIM-Management", text: "Einbindung und Steuerung von BIM-Prozessen auf Bauherrenseite für konsistente Modellstände, klare Informationsflüsse und koordinierte Zusammenarbeit.", icon: <Layers className="w-5 h-5" /> }
     ],
     techStack: ["Projekt-Dashboards", "Risikobewertung", "Cloud-CDE", "BIM-basierte Auswertung"],
-    process: ["Projektvorbereitung", "Planung", "Ausführungsvorbereitung", "Ausführung", "Projektabschluss"]
+    process: [
+      "Steuerungsmodell",
+      "Terminplananalyse",
+      "Kostensteuerung",
+      "Schnittstellenmanagement",
+      "Maßnahmentracking"
+    ]
   },
   es: {
     id: 'es',
@@ -41,7 +48,7 @@ const serviceDetails: Record<string, ServiceDetail> = {
     for: "Für Generalunternehmen",
     subtitle: "Sichere Ausführung durch digitale Taktung, Mengenklarheit und durchgängige Nachverfolgung.",
     icon: <HardHat className="w-12 h-12 text-blue-400" />,
-    description: "Wir unterstützen Generalunternehmen in der operativen Ausführung. Im Fokus stehen belastbare Taktung, nachvollziehbare Mengen und eine saubere Baudokumentation, um Stillstände, Nachträge und Reibungsverluste messbar zu reduzieren.",
+    description: "Wir unterstützen Generalunternehmen in der operativen Ausführung. Im Fokus stehen eine robuste Taktung, nachvollziehbare Mengen und eine saubere Baudokumentation, um Stillstände, Nachträge und Reibungsverluste messbar zu reduzieren.",
     mainPoints: [
       { title: "Taktplanung 4D", text: "Simulation und Steuerung von Bauabläufen mit modellbasierter Terminprognose zur Vermeidung von Stillstand und Kollisionen der Gewerke.", icon: <Layers className="w-5 h-5" /> },
       { title: "Mengenvalidierung", text: "Modellbasierte Prüfung von Ausschreibungsmengen zur Vermeidung von Nachtragsrisiken.", icon: <Search className="w-5 h-5" /> },
@@ -54,7 +61,7 @@ const serviceDetails: Record<string, ServiceDetail> = {
     id: 'bm',
     title: "BIM-Koordination",
     for: "Für Planer",
-    subtitle: "Belastbare Datenkoordination für planbare Ausführung, weniger Planungsrisiken und klare Freigaben.",
+    subtitle: "Verlässliche Datenkoordination für planbare Ausführung, weniger Planungsrisiken und klare Freigaben.",
     icon: <PenTool className="w-12 h-12 text-purple-400" />,
     description: "Wir machen Planungsprozesse BIM-fähig und koordinierbar. BauOne führt Fachmodelle zusammen, prüft Kollisionen und sorgt für verlässliche Datenstände, damit Entscheidungen vor der Baustelle statt auf der Baustelle getroffen werden und Freigaben schneller erfolgen.",
     mainPoints: [
@@ -63,14 +70,14 @@ const serviceDetails: Record<string, ServiceDetail> = {
       { title: "Scan-to-BIM", text: "Erstellung hochpräziser digitaler Bestandsmodelle mittels Laserscan-Technologie für Sanierungsprojekte.", icon: <Search className="w-5 h-5" /> }
     ],
     techStack: ["Solibri / Navisworks", "Revit- & Archicad-Integration", "Punktwolkenverarbeitung"],
-    process: ["EIR/BAP-Definition", "Interdisziplinärer Check", "Modellvalidierung", "IFC-Exportmanagement"]
+    process: ["EIR/BAP-Definition", "Modellvalidierung", "Interdisziplinärer Check", "IFC-Exportmanagement"]
   }
 };
 
 const pillars = [
-  { id: 'pm', title: "Projektsteuerung", for: "Für Bauherren", subtitle: "Wir steuern mit klarer Verantwortung.", icon: <Target className="w-8 h-8 text-cyan-400" />, description: "Komplexe Hochbauprojekte brauchen eine unabhängige Steuerung. Mit digitalem Controlling schaffen wir frühzeitige Transparenz und belastbare Entscheidungen.", items: ["Organisation & Koordination", "Kosten- und Terminsteuerung", "Vertrags- und Nachtragsmanagement"] },
+  { id: 'pm', title: "Projektsteuerung", for: "Für Bauherren", subtitle: "Wir steuern mit klarer Verantwortung.", icon: <Target className="w-8 h-8 text-cyan-400" />, description: "Komplexe Hochbauprojekte brauchen eine unabhängige Steuerung. Mit digitalem Controlling schaffen wir frühzeitige Transparenz und klare Entscheidungen.", items: ["Organisation & Koordination", "Kosten- und Terminsteuerung", "Vertrags- und Nachtragsmanagement", "BIM-Management"] },
   { id: 'es', title: "Ausführungsunterstützung", for: "Für Generalunternehmen", subtitle: "Präzision in der Ausführung.", icon: <HardHat className="w-8 h-8 text-blue-400" />, description: "Wir unterstützen GUs in der Baustellensteuerung – von der Taktplanung bis zur lückenlosen Dokumentation für weniger Stillstand und Nacharbeit.", items: ["Modellbasierte Terminprognosen", "BIM-gestütztes Monitoring", "Mengenprüfung", "Schnellere Freigaben"] },
-  { id: 'bm', title: "BIM-Koordination", for: "Für Planer", subtitle: "Das digitale Fundament.", icon: <PenTool className="w-8 h-8 text-purple-400" />, description: "Wir unterstützen Planer bei belastbaren BIM-Prozessen – mit klaren Datenstrukturen, koordinierbaren Modellen und früher Konfliktlösung.", items: ["BIM-Gesamtkoordination", "Kollisionsprüfungen", "EIR/BAP-Struktur", "Datenintegration"] }
+  { id: 'bm', title: "BIM-Koordination", for: "Für Planer", subtitle: "Das digitale Fundament.", icon: <PenTool className="w-8 h-8 text-purple-400" />, description: "Wir unterstützen Planer bei stabilen BIM-Prozessen – mit klaren Datenstrukturen, koordinierbaren Modellen und früher Konfliktlösung.", items: ["BIM-Gesamtkoordination", "Kollisionsprüfungen", "EIR/BAP-Struktur", "Datenintegration"] }
 ];
 
 interface ServicesProps {
@@ -107,7 +114,7 @@ const Services: React.FC<ServicesProps> = ({ onNavigate }) => {
             </h3>
           </div>
           <p className="text-slate-400 max-w-sm text-lg font-light leading-relaxed">
-            Wir kombinieren AHO/HOAI-Projektsteuerung mit digitalen Methoden. Das Ergebnis: einheitlicher Datenstand, früh erkannte Risiken und schnellere, belastbare Entscheidungen.
+            Wir kombinieren AHO/HOAI-Projektsteuerung mit digitalen Methoden.
           </p>
         </div>
 
@@ -157,7 +164,7 @@ const Services: React.FC<ServicesProps> = ({ onNavigate }) => {
            <div className="bg-slate-950 p-10 flex flex-col items-center text-center group">
               <Zap className="text-cyan-400 w-10 h-10 mb-6 group-hover:scale-110 transition-transform" />
               <h6 className="text-white font-bold text-xl mb-3 font-heading uppercase tracking-tighter">Nachvollziehbare Steuerung</h6>
-                <p className="text-slate-500 text-xs leading-relaxed font-mono">Ein durchgängiger Datenstand macht Abweichungen früh sichtbar und Entscheidungen belastbar.</p>
+             <p className="text-slate-500 text-xs leading-relaxed font-mono">Ein durchgängiger Datenstand macht Abweichungen früh sichtbar und Entscheidungen klar begründbar.</p>
            </div>
            <div className="bg-slate-950 p-10 flex flex-col items-center text-center group">
               <Briefcase className="text-blue-400 w-10 h-10 mb-6 group-hover:scale-110 transition-transform" />
@@ -237,7 +244,7 @@ const Services: React.FC<ServicesProps> = ({ onNavigate }) => {
                   </div>
 
                   <div className="p-8 rounded-3xl bg-slate-950/50 border border-white/5">
-                    <h3 className="text-white font-bold text-sm uppercase tracking-widest mb-6 flex items-center gap-2 font-mono">
+                    <h3 className="text-white font-bold text-sm tracking-widest mb-6 flex items-center gap-2 font-mono">
                       <Activity className="w-4 h-4 text-blue-400" /> BauOne Vorgehen
                     </h3>
                     <div className="space-y-4">

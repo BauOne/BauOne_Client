@@ -18,7 +18,7 @@ export const siteContent = {
     ],
     experienceSince: '2016',
     role: 'Inhaber',
-    focus: 'Operative Projektverantwortung & konsequente Umsetzung',
+    focus: 'Operative Projektverantwortung',
     email: 'info@bauone.de',
   },
   legal: {
@@ -30,7 +30,7 @@ export const siteContent = {
   seo: {
     title: 'BauOne | Projektsteuerung & Ingenieurmanagement im Hochbau',
     description:
-      'BauOne ist Ihr Ingenieurbüro für Projektsteuerung und Ingenieurmanagement im Hochbau. Wir steuern Kosten, Termine und Qualität auf belastbarer Datengrundlage.',
+      'BauOne ist Ihr Ingenieurbüro für Projektsteuerung und Ingenieurmanagement im Hochbau. Wir steuern Kosten, Termine und Qualität auf einer klaren, konsistenten Datengrundlage.',
     canonicalUrl: 'https://bauone.de/',
   },
   social: {

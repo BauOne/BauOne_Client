@@ -37,7 +37,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </span>
             </div>
             <p className="text-slate-400 text-sm mb-6 leading-relaxed">
-              BauOne — Ihr Partner für Projektsteuerung und Ingenieurmanagement im Hochbau. Wir verbinden technische Expertise mit strukturierter digitaler Steuerung.
+              BauOne — Ihr Partner für Projektsteuerung und Ingenieurmanagement im Hochbau. Wir verbinden technische Expertise mit digitalen Methoden.
             </p>
             {socialLinks.length > 0 && (
               <div className="flex gap-4">

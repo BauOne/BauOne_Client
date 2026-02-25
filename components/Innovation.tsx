@@ -26,7 +26,7 @@ const Innovation: React.FC = () => {
             </h3>
             
             <p className="text-xl text-slate-400 mb-10 leading-relaxed font-light">
-               Bauprojekte verlieren Zeit und Budget, wenn Informationen verteilt und unvollständig sind. Wir führen Daten strukturiert zusammen, damit Risiken früher erkannt und Entscheidungen schneller belastbar getroffen werden.
+               Bauprojekte verlieren Zeit und Budget, wenn Informationen verteilt und unvollständig sind. Wir führen Daten strukturiert zusammen, damit Risiken früher erkannt und Entscheidungen schneller sowie fundierter getroffen werden.
             </p>
 
             <div className="space-y-8">
@@ -36,7 +36,7 @@ const Innovation: React.FC = () => {
                  </div>
                  <div>
                     <h5 className="text-white font-bold text-lg mb-1 uppercase tracking-tighter font-heading">Strukturierte Datenerfassung</h5>
-                              <p className="text-sm text-slate-500 leading-relaxed">Wir verarbeiten unterschiedliche Eingangsformate: von Planständen und Excel bis zu IFC-Modellen. So entsteht ein einheitlicher Datenstand statt fragmentierter Einzelinformationen.</p>
+                                             <p className="text-sm text-slate-500 leading-relaxed">Wir verarbeiten unterschiedliche Formate und Daten: von Verträgen und Leistungsverzeichnissen bis zu Plänen und IFC-Modellen. So entsteht ein einheitlicher Datenstand statt fragmentierter Einzelinformationen.</p>
                  </div>
                </div>
                <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 group">

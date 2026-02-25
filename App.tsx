@@ -174,7 +174,7 @@ function App() {
                     </div>
                     <h4 className="text-white font-bold mb-3 uppercase tracking-tight text-lg font-heading">Projektsteuerung mit Ingenieurkompetenz</h4>
                     <p className="text-slate-500 text-sm leading-relaxed font-mono">
-                      Wir steuern komplexe Hochbauprojekte auf Basis belastbarer Projekt- und Fachdaten.
+                      Wir führen komplexe Hochbauprojekte mit technischer Expertise, klaren Prozessen und präziser Koordination zum Ziel.
                     </p>
                   </div>
 
@@ -216,15 +216,12 @@ function App() {
             <section className="py-32 bg-slate-950 relative">
               <div className="max-w-5xl mx-auto px-4 text-center">
                 <div className="inline-block px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-500/20 mb-8">
-                   <span className="text-cyan-400 font-bold text-[10px] uppercase tracking-widest font-mono">Projektsteuerung mit belastbarer Datengrundlage</span>
+                   <span className="text-cyan-400 font-bold text-[10px] uppercase tracking-widest font-mono">Projektsteuerung mit klarer Datengrundlage</span>
                 </div>
                 <h2 className="text-5xl md:text-7xl font-bold text-white mb-10 tracking-tighter">
                   Lassen Sie uns Ihr <br/>
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Projekt sicher zum Ziel führen.</span>
                 </h2>
-                <p className="text-slate-400 text-xl mb-12 max-w-2xl mx-auto font-light leading-relaxed">
-                  Vom Mediapark Köln aus steuern wir Ihr Projekt mit klaren Zuständigkeiten, strukturiertem Reporting und belastbaren Entscheidungsgrundlagen.
-                </p>
                 <div className="flex flex-col sm:flex-row justify-center gap-6">
                    <button onClick={() => handleNavigation('home', '#contact')} className="px-12 py-6 bg-white text-slate-950 font-bold rounded-lg hover:bg-cyan-400 transition-all shadow-xl hover:scale-105 active:scale-95 font-heading">
                      Unverbindliches Erstgespräch

@@ -13,8 +13,8 @@ const About: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Introduction Grid */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
-          <div className="relative">
+        <div className="grid lg:grid-cols-2 gap-16 items-start mb-24">
+          <div className="relative lg:mt-36">
             <div className="relative z-10 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
               <img 
                 src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200" 
@@ -26,16 +26,13 @@ const About: React.FC = () => {
             {/* Experience Badge */}
             <div className="absolute -bottom-6 -right-6 glass-morphism p-6 rounded-2xl border-cyan-500/30 z-20">
               <p className="text-4xl font-bold text-white mb-1 font-heading">Seit {siteContent.company.foundedYear}</p>
-              <p className="text-xs text-cyan-400 font-bold uppercase tracking-widest font-mono">BauOne gegründet</p>
+              <p className="text-xs text-cyan-400 font-bold tracking-widest font-mono">BauOne gegründet</p>
             </div>
           </div>
 
           <div>
             <h2 className="text-cyan-400 font-bold uppercase tracking-widest text-sm mb-4 font-mono">Unsere DNA</h2>
             <h3 className="text-4xl font-bold text-white mb-6">Wir steuern Bauprojekte <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">verlässlich.</span></h3>
-            <p className="text-slate-400 text-lg mb-8 leading-relaxed">
-              BauOne wurde gegründet, um Bauherren eine verlässliche Projektsteuerung zu bieten. Als Ingenieurbüro verbinden wir technische Expertise mit strukturierten digitalen Prozessen, damit auch komplexe Projekte auf einer einheitlichen Datengrundlage steuerbar bleiben.
-            </p>
             
             <div className="space-y-6">
               <div className="flex gap-4 p-4 rounded-2xl hover:bg-white/5 transition-colors group">
@@ -53,7 +50,7 @@ const About: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-bold mb-1 font-heading">Nachvollziehbare Steuerung</h4>
-                  <p className="text-sm text-slate-500">Egal wie Ihre Partner arbeiten – wir konsolidieren Projektdaten zu einem einheitlichen digitalen Datenstand für klare Entscheidungen und belastbares Reporting.</p>
+                  <p className="text-sm text-slate-500">Egal wie Ihre Partner arbeiten – wir konsolidieren Projektdaten zu einem einheitlichen digitalen Datenstand für klare Entscheidungen und transparentes Reporting.</p>
                 </div>
               </div>
               <div className="flex gap-4 p-4 rounded-2xl hover:bg-white/5 transition-colors group">
@@ -90,7 +87,7 @@ const About: React.FC = () => {
 
             <div className="md:col-span-8 lg:col-span-9">
               <blockquote className="text-2xl md:text-3xl font-light text-white leading-relaxed mb-8">
-                "In komplexen Bauprojekten braucht es klare Verantwortung und eine belastbare Datengrundlage. Unser Anspruch ist es, Projekte so zu steuern, dass Entscheidungen nachvollziehbar und Ergebnisse verlässlich sind."
+                "In komplexen Bauprojekten braucht es klare Verantwortung und eine konsistente Datengrundlage. Unser Anspruch ist es, Projekte so zu steuern, dass Entscheidungen nachvollziehbar und Ergebnisse verlässlich sind."
               </blockquote>
               
               <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 border-t border-white/10 pt-8">

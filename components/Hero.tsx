@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.7 }}
               className="text-xl text-slate-400 max-w-2xl mb-12 leading-relaxed font-light border-l border-white/10 pl-6"
             >
-              Wir steuern komplexe Hochbauprojekte mit einem einheitlichen digitalen Datenstand, sodass Entscheidungen zu Kosten, Terminen und Qualität schnell, belastbar und nachvollziehbar sind.
+              Wir steuern komplexe Hochbauprojekte mit einem einheitlichen digitalen Datenstand, damit Entscheidungen zu Kosten, Terminen und Qualität schnell, klar und nachvollziehbar getroffen werden.
             </motion.p>
             
             <motion.div 
@@ -77,19 +77,19 @@ const Hero: React.FC = () => {
               transition={{ duration: 0.8, delay: 1.1 }}
               className="border-y border-white/10 bg-slate-950/50 backdrop-blur-sm"
             >
-              <div className="grid grid-cols-4 divide-x divide-white/10">
+              <div className="grid grid-cols-2 sm:grid-cols-4 sm:divide-x divide-white/10">
                 {[
                   { label: "Datenstand", value: "Einheitlich", icon: <Ruler className="w-3 h-3 text-cyan-400" /> },
                   { label: "Prognosen", value: "Modellbasiert", icon: <Activity className="w-3 h-3 text-blue-400" /> },
                   { label: "Entscheidungen", value: "Nachvollziehbar", icon: <Server className="w-3 h-3 text-purple-400" /> },
                   { label: "Reporting", value: "Echtzeitnah", icon: <Radio className="w-3 h-3 text-emerald-400 animate-pulse" /> }
                 ].map((item, i) => (
-                  <div key={i} className="py-4 px-2 lg:px-6 flex flex-col justify-center">
+                  <div key={i} className="py-4 px-4 sm:px-2 lg:px-6 flex flex-col justify-center border-b border-white/10 sm:border-b-0 even:border-l even:border-white/10 sm:even:border-l-0">
                     <div className="flex items-center gap-2 mb-1 opacity-70">
                       {item.icon}
-                      <span className="text-[9px] font-bold text-slate-400 uppercase tracking-widest font-mono">{item.label}</span>
+                      <span className="text-[10px] sm:text-[9px] font-bold text-slate-400 uppercase tracking-widest font-mono">{item.label}</span>
                     </div>
-                    <span className="text-base font-bold text-white font-heading tracking-tight">{item.value}</span>
+                    <span className="text-sm sm:text-base font-bold text-white font-heading tracking-tight">{item.value}</span>
                   </div>
                 ))}
               </div>
@@ -125,7 +125,7 @@ const Hero: React.FC = () => {
                       <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
                       <div className="w-2 h-2 rounded-full bg-green-500"></div>
                    </div>
-                   <div className="text-[9px] font-mono text-cyan-400">BAUONE_V4.0_PROJECT_MONITOR</div>
+                   <div className="text-[9px] font-mono text-cyan-400">BauOne_V4.0_PROJECT_MONITOR</div>
                 </div>
 
                 {/* "Clean" Single Dashboard Card instead of scattered boxes */}
