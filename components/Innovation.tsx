@@ -163,7 +163,7 @@ const Innovation: React.FC = () => {
                           <span className="text-[9px] text-blue-300 font-mono">02</span>
                        </div>
                        <div className="text-sm font-bold text-white mb-1 leading-tight">Schneller entschieden</div>
-                       <p className="text-[10px] text-slate-500 font-mono leading-relaxed">Maßnahmen sind datenbasiert, priorisiert und direkt ableitbar.</p>
+                       <p className="text-[10px] text-slate-500 font-mono leading-relaxed">Maßnahmen lassen sich datenbasiert ableiten.</p>
                     </div>
                     <div className="bg-slate-950 p-4 rounded-lg border border-purple-500/20 min-h-[118px] flex flex-col justify-between">
                        <div className="flex items-center justify-between mb-2">

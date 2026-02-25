@@ -81,7 +81,7 @@ const Hero: React.FC = () => {
                 {[
                   { label: "Datenstand", value: "Einheitlich", icon: <Ruler className="w-3 h-3 text-cyan-400" /> },
                   { label: "Prognosen", value: "Modellbasiert", icon: <Activity className="w-3 h-3 text-blue-400" /> },
-                  { label: "Entscheidungen", value: "Nachweisfähig", icon: <Server className="w-3 h-3 text-purple-400" /> },
+                  { label: "Entscheidungen", value: "Nachvollziehbar", icon: <Server className="w-3 h-3 text-purple-400" /> },
                   { label: "Reporting", value: "Echtzeitnah", icon: <Radio className="w-3 h-3 text-emerald-400 animate-pulse" /> }
                 ].map((item, i) => (
                   <div key={i} className="py-4 px-2 lg:px-6 flex flex-col justify-center">

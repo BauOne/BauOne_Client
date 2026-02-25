@@ -12,7 +12,7 @@ const projects = [
     category: "Forschung & Produktion",
     image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80&w=800",
     bgf: "ca. 12.300 m²",
-    scope: "Projektsteuerung Rohbau / Ausbau"
+    scope: "Projektmanagement CSA"
   },
   {
     title: "Bestandssanierung nach Schadensereignis",

@@ -241,7 +241,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 selection:bg-cyan-500/30">
+    <div id="top" className="min-h-screen bg-slate-950 selection:bg-cyan-500/30">
       <Navbar onNavigate={handleNavigation} currentView={currentView} />
       <main>
         {renderView()}

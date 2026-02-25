@@ -44,9 +44,6 @@ const Logo: React.FC<LogoProps> = ({ className = "w-10 h-10" }) => {
       {/* This creates the distinct '1' silhouette at the top */}
       <rect x="45" y="10" width="20" height="15" fill="#22d3ee" />
 
-      {/* Optional: A small digital pixel connector to show integration */}
-      <rect x="60" y="25" width="5" height="5" fill="#0891b2" />
-
     </svg>
   );
 };

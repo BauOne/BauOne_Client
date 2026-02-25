@@ -27,7 +27,7 @@ const allProjects = [
     year: "2024",
     image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80&w=1200",
     description: "Hochmoderner Neubau für Forschung und Produktion mit komplexen technischen Anforderungen an Reinräume und TGA.",
-    scope: "Projektsteuerung Rohbau / Ausbau / Architektur",
+    scope: "Projektmanagement CSA",
     phases: ['LP 5', 'LP 6', 'LP 7', 'LP 8'],
     bgf: "ca. 12.300 m²"
   },

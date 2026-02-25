@@ -34,7 +34,7 @@ const About: React.FC = () => {
             <h2 className="text-cyan-400 font-bold uppercase tracking-widest text-sm mb-4 font-mono">Unsere DNA</h2>
             <h3 className="text-4xl font-bold text-white mb-6">Wir steuern Bauprojekte <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">verlässlich.</span></h3>
             <p className="text-slate-400 text-lg mb-8 leading-relaxed">
-              BauOne wurde gegründet, um Bauherren eine verlässliche Projektsteuerung zu bieten. Als Ingenieurbüro verbinden wir technische Expertise mit einem digitalen Betriebsmodell, damit auch komplexe Projekte mit einheitlichem Datenstand steuerbar bleiben.
+              BauOne wurde gegründet, um Bauherren eine verlässliche Projektsteuerung zu bieten. Als Ingenieurbüro verbinden wir technische Expertise mit strukturierten digitalen Prozessen, damit auch komplexe Projekte auf einer einheitlichen Datengrundlage steuerbar bleiben.
             </p>
             
             <div className="space-y-6">
@@ -62,7 +62,7 @@ const About: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-bold mb-1 font-heading">Erfahrung trifft Systematik</h4>
-                  <p className="text-sm text-slate-500">Ingenieur-Expertise im Mediapark Köln, kombiniert mit klaren Methoden und digitaler Prozessführung für Termin-, Kosten- und Qualitätssteuerung.</p>
+                  <p className="text-sm text-slate-500">Ingenieur-Expertise, kombiniert mit klaren Methoden und digitaler Prozessführung für Termin-, Kosten- und Qualitätssteuerung.</p>
                 </div>
               </div>
             </div>
