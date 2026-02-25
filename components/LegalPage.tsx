@@ -108,19 +108,65 @@ const LegalPage: React.FC<LegalPageProps> = ({ onBack }) => {
             </div>
             
             <div className="prose prose-invert max-w-none text-slate-400 space-y-6">
-              <h3 className="text-white font-bold text-xl">1. Datenschutz auf einen Blick</h3>
+              <h3 className="text-white font-bold text-xl">1. Verantwortlicher</h3>
               <p>
-                Die folgenden Hinweise geben einen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.
+                Verantwortlich für die Datenverarbeitung auf dieser Website ist der im Impressum genannte Betreiber.
+                Die Kontaktdaten (Adresse, Telefon, E-Mail) finden Sie im Abschnitt „Impressum“.
               </p>
 
-              <h3 className="text-white font-bold text-xl">2. Datenerfassung auf unserer Website</h3>
+              <h3 className="text-white font-bold text-xl">2. Art und Zweck der Verarbeitung</h3>
               <p>
-                Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Die Kontaktdaten finden Sie im Impressum. Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen, z. B. über das Kontaktformular.
+                Beim Besuch dieser Website werden technisch notwendige Informationen verarbeitet, um die Website bereitzustellen
+                (z. B. Anzeige der Seiteninhalte, Navigation, Speicherung Ihrer Datenschutzentscheidung).
               </p>
 
-              <h3 className="text-white font-bold text-xl">3. Analyse-Tools und Tools von Drittanbietern</h3>
+              <h3 className="text-white font-bold text-xl">3. Kontaktaufnahme</h3>
               <p>
-                Sofern Sie einwilligen, nutzen wir Google Analytics zur statistischen Auswertung der Website-Nutzung. Ohne Einwilligung werden keine Analyse-Cookies gesetzt und kein Tracking aktiviert.
+                Das Kontaktformular auf dieser Website versendet keine Eingaben an einen Website-Server.
+                Beim Absenden wird Ihr lokales E-Mail-Programm per „mailto“-Link geöffnet. Die weitere Verarbeitung Ihrer Angaben
+                erfolgt erst mit dem Versand Ihrer E-Mail durch Ihren E-Mail-Anbieter und den Empfänger.
+              </p>
+
+              <h3 className="text-white font-bold text-xl">4. Einwilligungsmanagement</h3>
+              <p>
+                Ihre Entscheidung zu Cookies/Tracking wird in Ihrem Browser lokal gespeichert (Local Storage),
+                damit die Auswahl bei weiteren Seitenaufrufen berücksichtigt werden kann.
+                Rechtsgrundlage ist Art. 6 Abs. 1 lit. c DSGVO (Nachweis und Umsetzung datenschutzrechtlicher Anforderungen)
+                sowie Art. 6 Abs. 1 lit. f DSGVO (technisch zuverlässiger Betrieb).
+              </p>
+
+              <h3 className="text-white font-bold text-xl">5. Google Analytics (nur mit Einwilligung)</h3>
+              <p>
+                Sofern Sie einwilligen (Art. 6 Abs. 1 lit. a DSGVO), wird Google Analytics zur statistischen Auswertung der Nutzung eingesetzt.
+                Ohne Einwilligung wird Google Analytics nicht geladen. Die IP-Anonymisierung ist aktiviert.
+                Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft über die Cookie-Einstellungen widerrufen.
+              </p>
+              <p>
+                Hinweis: Je nach Konfiguration des eingesetzten Analytics-Dienstes kann eine Verarbeitung in Drittländern
+                (insbesondere USA) nicht ausgeschlossen werden. Die Datenübermittlung erfolgt – sofern erforderlich –
+                auf Grundlage der jeweils von den Anbietern bereitgestellten und rechtlich vorgesehenen Übermittlungsmechanismen.
+              </p>
+
+              <h3 className="text-white font-bold text-xl">6. Speicherdauer</h3>
+              <p>
+                Wir speichern personenbezogene Daten nur so lange, wie dies für die jeweiligen Zwecke erforderlich ist
+                oder gesetzliche Aufbewahrungspflichten bestehen.
+              </p>
+
+              <h3 className="text-white font-bold text-xl">7. Ihre Rechte</h3>
+              <p>
+                Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16 DSGVO), Löschung (Art. 17 DSGVO),
+                Einschränkung der Verarbeitung (Art. 18 DSGVO), Datenübertragbarkeit (Art. 20 DSGVO) sowie Widerspruch
+                gegen Verarbeitungen auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (Art. 21 DSGVO).
+              </p>
+              <p>
+                Sofern eine Verarbeitung auf Einwilligung beruht, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen.
+                Außerdem haben Sie ein Beschwerderecht bei einer Datenschutzaufsichtsbehörde (Art. 77 DSGVO).
+              </p>
+
+              <h3 className="text-white font-bold text-xl">8. Stand dieser Erklärung</h3>
+              <p>
+                Diese Datenschutzerklärung wird bei rechtlichen, technischen oder organisatorischen Änderungen aktualisiert.
               </p>
             </div>
           </section>
@@ -134,11 +180,24 @@ const LegalPage: React.FC<LegalPageProps> = ({ onBack }) => {
               <h2 className="text-4xl font-bold text-white">Cookie-Richtlinie</h2>
             </div>
             <div className="prose prose-invert max-w-none text-slate-400 space-y-6">
-              <p>Unsere Website verwendet Cookies. Das sind kleine Textdateien, die Ihr Browser auf Ihrem Endgerät speichert. Cookies helfen dabei, die Website technisch bereitzustellen und nutzerfreundlich zu gestalten.</p>
-               <h3 className="text-white font-bold text-xl">Notwendige Cookies</h3>
-              <p>Einige Cookies sind für den technischen Betrieb der Website erforderlich, z. B. für Navigation oder die Speicherung Ihrer Datenschutzeinstellungen. Diese Cookies können nicht deaktiviert werden.</p>
-               <h3 className="text-white font-bold text-xl">Einstellungen verwalten</h3>
-              <p>Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, für bestimmte Fälle oder generell ausschließen sowie beim Schließen des Browsers automatisch löschen lassen.</p>
+              <p>
+                Diese Website verwendet technisch notwendige Speichermechanismen sowie – nur nach Ihrer Einwilligung –
+                Analyse-Technologien.
+              </p>
+              <h3 className="text-white font-bold text-xl">Technisch notwendige Speicherung</h3>
+              <p>
+                Für den Betrieb der Website und die Speicherung Ihrer Datenschutzauswahl wird ein lokaler Speichereintrag
+                im Browser (Local Storage) genutzt. Diese Speicherung ist erforderlich, um Ihre Auswahl umzusetzen.
+              </p>
+              <h3 className="text-white font-bold text-xl">Analyse</h3>
+              <p>
+                Analysefunktionen (Google Analytics) werden nur nach aktiver Einwilligung geladen und ausgeführt.
+              </p>
+              <h3 className="text-white font-bold text-xl">Einstellungen verwalten</h3>
+              <p>
+                Sie können Ihre Entscheidung jederzeit über „Cookie-Einstellungen“ auf dieser Website ändern.
+                Zusätzlich können Sie in Ihrem Browser gespeicherte Daten löschen oder blockieren.
+              </p>
             </div>
           </section>
         </div>
