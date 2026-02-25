@@ -22,55 +22,55 @@ interface ServiceDetail {
 const serviceDetails: Record<string, ServiceDetail> = {
   pm: {
     id: 'pm',
-    title: "Project Management",
+    title: "Projektsteuerung",
     for: "Für Bauherren",
-    subtitle: "Datenbasiertes Projektmanagement für Termin-, Kosten- und Qualitätsziele.",
+    subtitle: "Projektsteuerung mit klarer Verantwortung und digitaler Entscheidungsgrundlage.",
     icon: <Target className="w-12 h-12 text-cyan-400" />,
-    description: "Wir übernehmen die Steuerung Ihres Projekts auf Bauherrenseite. BauOne verbindet Projektmanagement nach AHO/HOAI mit strukturiertem digitalem Controlling für belastbare Entscheidungen.",
+    description: "Wir übernehmen die Steuerung Ihres Projekts auf Bauherrenseite. BauOne verbindet Projektsteuerung nach AHO/HOAI mit digital gestütztem Controlling und einem einheitlichen Datenstand, damit Risiken früher sichtbar und Entscheidungen schneller belastbar werden.",
     mainPoints: [
-      { title: "Strategische Leitung", text: "Übernahme der Gesamtverantwortung für Organisation, Kosten und Termine über alle HOAI-Phasen.", icon: <Briefcase className="w-5 h-5" /> },
-      { title: "Digitales Controlling", text: "Echtzeit-Dashboards für Budget- und Zeitverfolgung. Keine Überraschungen bei der Schlussrechnung.", icon: <Activity className="w-5 h-5" /> },
+      { title: "Projektleitung", text: "Übernahme der Steuerungsverantwortung für Organisation, Kosten und Termine über die relevanten HOAI-Phasen.", icon: <Briefcase className="w-5 h-5" /> },
+      { title: "Strukturiertes Controlling", text: "Laufendes Reporting zu Budget-, Termin- und Qualitätslage mit prüfbarer Datenherkunft als belastbare Grundlage für Steuerungsentscheidungen.", icon: <Activity className="w-5 h-5" /> },
       { title: "Bauherrenvertretung", text: "Technische und wirtschaftliche Durchsetzung Ihrer Interessen gegenüber allen Projektbeteiligten.", icon: <ShieldCheck className="w-5 h-5" /> }
     ],
-    techStack: ["PowerBI Dashboards", "KI-Risikoanalyse", "Cloud-CDE", "BIM 5D"],
-    process: ["Bedarfsplanung digital", "Strukturierte Vergabe", "Echtzeit-Steuerung", "Asset-Ready Übergabe"]
+    techStack: ["Projekt-Dashboards", "Risikobewertung", "Cloud-CDE", "BIM-basierte Auswertung"],
+    process: ["Bedarfsplanung", "Strukturierte Vergabe", "Laufende Steuerung", "Geordnete Übergabe"]
   },
   es: {
     id: 'es',
-    title: "Execution Support",
+    title: "Ausführungsunterstützung",
     for: "Für Generalunternehmen",
-    subtitle: "Maximale Effizienz auf der Baustelle durch Digitalisierung.",
+    subtitle: "Sichere Ausführung durch digitale Taktung, Mengenklarheit und durchgängige Nachverfolgung.",
     icon: <HardHat className="w-12 h-12 text-blue-400" />,
-    description: "Wir unterstützen Generalunternehmen in der operativen Ausführung. Im Fokus stehen belastbare Taktung, nachvollziehbare Mengen und eine saubere digitale Baudokumentation.",
+    description: "Wir unterstützen Generalunternehmen in der operativen Ausführung. Im Fokus stehen belastbare Taktung, nachvollziehbare Mengen und eine saubere Baudokumentation, um Stillstände, Nachträge und Reibungsverluste messbar zu reduzieren.",
     mainPoints: [
-      { title: "Taktplanung 4D", text: "Simulation und Steuerung von Bauabläufen zur Vermeidung von Stillstand und Kollisionen der Gewerke.", icon: <Layers className="w-5 h-5" /> },
+      { title: "Taktplanung 4D", text: "Simulation und Steuerung von Bauabläufen mit modellbasierter Terminprognose zur Vermeidung von Stillstand und Kollisionen der Gewerke.", icon: <Layers className="w-5 h-5" /> },
       { title: "Mengenvalidierung", text: "Modellbasierte Prüfung von Ausschreibungsmengen zur Vermeidung von Nachtragsrisiken.", icon: <Search className="w-5 h-5" /> },
-      { title: "Bauleitung", text: "Vollständig digitalisierte Mangelverfolgung und Abnahme-Prozesse via Cloud-Sync.", icon: <Settings className="w-5 h-5" /> }
+      { title: "Bauleitung", text: "Strukturierte Mangelverfolgung und nachvollziehbare Abnahmeprozesse mit einheitlichem Datenstand für alle Beteiligten.", icon: <Settings className="w-5 h-5" /> }
     ],
-    techStack: ["BIM 4D Scheduling", "Site Inspection Tools", "Automatisierte Mengenermittlung"],
-    process: ["Modell-Check", "Takt-Simulierung", "Execution Monitoring", "Digital Close-out"]
+    techStack: ["BIM-gestützte Ablaufplanung", "Digitale Bautagebücher", "Automatisierte Mengenermittlung"],
+    process: ["Modell-Check", "Takt-Simulation", "Ausführungsmonitoring", "Strukturierter Projektabschluss"]
   },
   bm: {
     id: 'bm',
-    title: "BIM Implementation",
+    title: "BIM-Koordination",
     for: "Für Planer",
-    subtitle: "High-End Datenkoordination für Architektur & Fachplanung.",
+    subtitle: "Belastbare Datenkoordination für planbare Ausführung, weniger Planungsrisiken und klare Freigaben.",
     icon: <PenTool className="w-12 h-12 text-purple-400" />,
-    description: "Wir machen Planungsprozesse BIM-fähig und koordinierbar. BauOne führt Fachmodelle zusammen, prüft Kollisionen und sorgt für verlässliche Datenstände über alle Beteiligten hinweg.",
+    description: "Wir machen Planungsprozesse BIM-fähig und koordinierbar. BauOne führt Fachmodelle zusammen, prüft Kollisionen und sorgt für verlässliche Datenstände, damit Entscheidungen vor der Baustelle statt auf der Baustelle getroffen werden und Freigaben schneller erfolgen.",
     mainPoints: [
-      { title: "Gesamtkoordination", text: "Zusammenführung aller Fachmodelle zu einem konsistenten Koordinationsmodell (Single Source of Truth).", icon: <Cpu className="w-5 h-5" /> },
+      { title: "Gesamtkoordination", text: "Zusammenführung aller Fachmodelle zu einem konsistenten Koordinationsmodell mit einheitlichen Prüfregeln.", icon: <Cpu className="w-5 h-5" /> },
       { title: "Clash Detection", text: "Automatisierte Prüfung auf geometrische und logische Kollisionen vor Baubeginn.", icon: <Zap className="w-5 h-5" /> },
       { title: "Scan-to-BIM", text: "Erstellung hochpräziser digitaler Bestandsmodelle mittels Laserscan-Technologie für Sanierungsprojekte.", icon: <Search className="w-5 h-5" /> }
     ],
-    techStack: ["Solibri / Navisworks", "Revit & Archicad Integration", "Point Cloud Processing"],
-    process: ["BIM-EIR Definition", "Interdisziplinärer Check", "Model Validation", "IFC Export Management"]
+    techStack: ["Solibri / Navisworks", "Revit- & Archicad-Integration", "Punktwolkenverarbeitung"],
+    process: ["EIR/BAP-Definition", "Interdisziplinärer Check", "Modellvalidierung", "IFC-Exportmanagement"]
   }
 };
 
 const pillars = [
-  { id: 'pm', title: "Project Management", for: "Für Bauherren", subtitle: "Wir steuern mit klarer Verantwortung.", icon: <Target className="w-8 h-8 text-cyan-400" />, description: "Komplexe Hochbauprojekte brauchen eine unabhängige Steuerung. Wir führen alle Phasen mit Fokus auf Kosten-, Termin- und Qualitätsziele.", items: ["Strategische Projektleitung", "Digitales Controlling", "Nachtragsmanagement", "Bauherrenvertretung"] },
-  { id: 'es', title: "Execution Support", for: "Für Generalunternehmen", subtitle: "Präzision in der Ausführung.", icon: <HardHat className="w-8 h-8 text-blue-400" />, description: "Wir unterstützen GUs in der digitalen Baustellensteuerung – von der Taktplanung bis zur lückenlosen Dokumentation.", items: ["Digitale Bauleitung", "Model-based Monitoring", "Mengenprüfung", "Prozessoptimierung"] },
-  { id: 'bm', title: "BIM Implementation", for: "Für Planer", subtitle: "Das digitale Fundament.", icon: <PenTool className="w-8 h-8 text-purple-400" />, description: "Wir unterstützen Planer bei der Einführung belastbarer BIM-Prozesse – mit klaren Datenstrukturen und koordinierbaren Modellen.", items: ["BIM-Gesamtkoordination", "Kollisionsprüfungen", "Scan-to-BIM", "Datenintegration"] }
+  { id: 'pm', title: "Projektsteuerung", for: "Für Bauherren", subtitle: "Wir steuern mit klarer Verantwortung.", icon: <Target className="w-8 h-8 text-cyan-400" />, description: "Komplexe Hochbauprojekte brauchen eine unabhängige Steuerung. Mit digitalem Controlling schaffen wir frühzeitige Transparenz und belastbare Entscheidungen.", items: ["Einheitlicher Datenstand", "Strukturiertes Controlling", "Klarere Nachtragsbasis", "Bauherrenvertretung"] },
+  { id: 'es', title: "Ausführungsunterstützung", for: "Für Generalunternehmen", subtitle: "Präzision in der Ausführung.", icon: <HardHat className="w-8 h-8 text-blue-400" />, description: "Wir unterstützen GUs in der Baustellensteuerung – von der Taktplanung bis zur lückenlosen Dokumentation für weniger Stillstand und Nacharbeit.", items: ["Modellbasierte Terminprognosen", "BIM-gestütztes Monitoring", "Mengenprüfung", "Schnellere Freigaben"] },
+  { id: 'bm', title: "BIM-Koordination", for: "Für Planer", subtitle: "Das digitale Fundament.", icon: <PenTool className="w-8 h-8 text-purple-400" />, description: "Wir unterstützen Planer bei belastbaren BIM-Prozessen – mit klaren Datenstrukturen, koordinierbaren Modellen und früher Konfliktlösung.", items: ["BIM-Gesamtkoordination", "Kollisionsprüfungen", "EIR/BAP-Struktur", "Datenintegration"] }
 ];
 
 interface ServicesProps {
@@ -107,7 +107,7 @@ const Services: React.FC<ServicesProps> = ({ onNavigate }) => {
             </h3>
           </div>
           <p className="text-slate-400 max-w-sm text-lg font-light leading-relaxed">
-            Wir kombinieren AHO/HOAI-Projektmanagement mit digitalem Controlling. Das Ergebnis sind nachvollziehbare Reports, klare Verantwortlichkeiten und belastbare Steuerungsentscheidungen.
+            Wir kombinieren AHO/HOAI-Projektsteuerung mit digitalen Methoden. Das Ergebnis: einheitlicher Datenstand, früh erkannte Risiken und schnellere, belastbare Entscheidungen.
           </p>
         </div>
 
@@ -146,7 +146,7 @@ const Services: React.FC<ServicesProps> = ({ onNavigate }) => {
                 onClick={() => openDetail(pillar.id)}
                 className="w-full py-4 rounded-xl border border-white/10 text-white text-[10px] font-bold tracking-widest uppercase hover:bg-white hover:text-slate-950 transition-all flex items-center justify-center gap-2 group/btn font-heading"
               >
-                Leistung Details <ChevronRight className="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" />
+                Leistungsdetails <ChevronRight className="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" />
               </button>
             </div>
           ))}
@@ -156,18 +156,18 @@ const Services: React.FC<ServicesProps> = ({ onNavigate }) => {
         <div className="mt-24 grid md:grid-cols-3 gap-1 bg-white/5 p-1 rounded-[2rem] overflow-hidden border border-white/5">
            <div className="bg-slate-950 p-10 flex flex-col items-center text-center group">
               <Zap className="text-cyan-400 w-10 h-10 mb-6 group-hover:scale-110 transition-transform" />
-              <h6 className="text-white font-bold text-xl mb-3 font-heading uppercase tracking-tighter">Radikale Transparenz</h6>
-                <p className="text-slate-500 text-xs leading-relaxed font-mono">Wir nutzen BIM und digitale Auswertungen, um Abweichungen früh sichtbar zu machen.</p>
+              <h6 className="text-white font-bold text-xl mb-3 font-heading uppercase tracking-tighter">Nachvollziehbare Steuerung</h6>
+                <p className="text-slate-500 text-xs leading-relaxed font-mono">Ein durchgängiger Datenstand macht Abweichungen früh sichtbar und Entscheidungen belastbar.</p>
            </div>
            <div className="bg-slate-950 p-10 flex flex-col items-center text-center group">
               <Briefcase className="text-blue-400 w-10 h-10 mb-6 group-hover:scale-110 transition-transform" />
-              <h6 className="text-white font-bold text-xl mb-3 font-heading uppercase tracking-tighter">Hochbau-Fokus</h6>
-              <p className="text-slate-500 text-xs leading-relaxed font-mono">Spezialisierung auf komplexe Gebäude mit technischem Anspruch.</p>
+              <h6 className="text-white font-bold text-xl mb-3 font-heading uppercase tracking-tighter">Messbare Wirkung</h6>
+              <p className="text-slate-500 text-xs leading-relaxed font-mono">Prüfbare Mengen- und Leistungsstände schaffen eine klare Nachtragsbasis.</p>
            </div>
            <div className="bg-slate-950 p-10 flex flex-col items-center text-center group">
               <Settings className="text-purple-400 w-10 h-10 mb-6 group-hover:scale-110 transition-transform" />
-              <h6 className="text-white font-bold text-xl mb-3 font-heading uppercase tracking-tighter">Methodik & Tooling</h6>
-                <p className="text-slate-500 text-xs leading-relaxed font-mono">Einheitliche Methoden und strukturierte Dashboards für nachvollziehbares Reporting.</p>
+              <h6 className="text-white font-bold text-xl mb-3 font-heading uppercase tracking-tighter">Differenzierendes Vorgehen</h6>
+                <p className="text-slate-500 text-xs leading-relaxed font-mono">Ingenieurwissen und Datenmethodik greifen in einem Steuerungskreislauf ineinander.</p>
            </div>
         </div>
       </div>
@@ -225,7 +225,7 @@ const Services: React.FC<ServicesProps> = ({ onNavigate }) => {
                 <div className="lg:col-span-2 space-y-8">
                   <div className="p-8 rounded-3xl bg-slate-950/50 border border-white/5">
                     <h3 className="text-white font-bold text-sm uppercase tracking-widest mb-6 flex items-center gap-2 font-mono">
-                      <Cpu className="w-4 h-4 text-cyan-400" /> Digital Tech-Stack
+                      <Cpu className="w-4 h-4 text-cyan-400" /> Digitale Werkzeuge
                     </h3>
                     <div className="flex flex-wrap gap-2">
                       {activeDetail.techStack.map((tech, i) => (
@@ -238,7 +238,7 @@ const Services: React.FC<ServicesProps> = ({ onNavigate }) => {
 
                   <div className="p-8 rounded-3xl bg-slate-950/50 border border-white/5">
                     <h3 className="text-white font-bold text-sm uppercase tracking-widest mb-6 flex items-center gap-2 font-mono">
-                      <Activity className="w-4 h-4 text-blue-400" /> BauOne Workflow
+                      <Activity className="w-4 h-4 text-blue-400" /> BauOne Vorgehen
                     </h3>
                     <div className="space-y-4">
                       {activeDetail.process.map((step, i) => (
@@ -255,7 +255,7 @@ const Services: React.FC<ServicesProps> = ({ onNavigate }) => {
                        onClick={handleContactClick}
                        className="w-full py-5 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl text-white font-bold text-sm hover:opacity-90 transition-opacity shadow-lg shadow-cyan-500/20 font-heading"
                      >
-                        Individuelle Beratung anfragen
+                        Projektgespräch vereinbaren
                      </button>
                   </div>
                 </div>

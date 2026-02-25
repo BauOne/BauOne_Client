@@ -68,12 +68,12 @@ function App() {
       },
       projects: {
         title: 'Referenzen | BauOne Ingenieurbüro Behrens',
-        description: 'Ausgewählte Referenzprojekte von BauOne: Projektsteuerung, BIM und technische Umsetzung im anspruchsvollen Hochbau.',
+        description: 'Ausgewählte Referenzprojekte von BauOne: Projektsteuerung und Ingenieurmanagement im anspruchsvollen Hochbau.',
         path: '/projects',
       },
       legal: {
         title: 'Impressum & Datenschutz | BauOne',
-        description: 'Rechtliche Informationen, Impressum und Datenschutz der Website von BauOne Ingenieurbüro Behrens.',
+        description: 'Impressum, Datenschutz und Cookie-Informationen der Website von BauOne Ingenieurbüro Behrens.',
         path: '/legal',
       },
     };
@@ -172,9 +172,9 @@ function App() {
                     <div className="w-10 h-10 mb-6 flex items-center justify-center bg-cyan-500/10 rounded-lg text-cyan-400 border border-cyan-500/20">
                       <Settings className="w-5 h-5" />
                     </div>
-                    <h4 className="text-white font-bold mb-3 uppercase tracking-tight text-lg font-heading">Ingenieur-Management</h4>
+                    <h4 className="text-white font-bold mb-3 uppercase tracking-tight text-lg font-heading">Projektsteuerung mit Ingenieurkompetenz</h4>
                     <p className="text-slate-500 text-sm leading-relaxed font-mono">
-                      Wir betrachten Bauwerke als technische Gesamtsysteme und steuern Projekte auf Basis belastbarer Fachdaten.
+                      Wir steuern komplexe Hochbauprojekte auf Basis belastbarer Projekt- und Fachdaten.
                     </p>
                   </div>
 
@@ -184,9 +184,9 @@ function App() {
                     <div className="w-10 h-10 mb-6 flex items-center justify-center bg-blue-500/10 rounded-lg text-blue-400 border border-blue-500/20">
                       <BarChart3 className="w-5 h-5" />
                     </div>
-                    <h4 className="text-white font-bold mb-3 uppercase tracking-tight text-lg font-heading">Digitale Exzellenz</h4>
+                    <h4 className="text-white font-bold mb-3 uppercase tracking-tight text-lg font-heading">Digitale Steuerungssicherheit</h4>
                     <p className="text-slate-500 text-sm leading-relaxed font-mono">
-                      Wir integrieren Daten aus Planung und Ausführung, damit Entscheidungen nachvollziehbar und zeitnah getroffen werden.
+                      Wir konsolidieren Daten aus Planung und Ausführung, damit Entscheidungen nachvollziehbar und termingerecht getroffen werden.
                     </p>
                   </div>
 
@@ -196,9 +196,9 @@ function App() {
                     <div className="w-10 h-10 mb-6 flex items-center justify-center bg-emerald-500/10 rounded-lg text-emerald-400 border border-emerald-500/20">
                       <Building2 className="w-5 h-5" />
                     </div>
-                    <h4 className="text-white font-bold mb-3 uppercase tracking-tight text-lg font-heading">Hochbau-Großprojekte</h4>
+                    <h4 className="text-white font-bold mb-3 uppercase tracking-tight text-lg font-heading">Komplexe Hochbauprojekte</h4>
                     <p className="text-slate-500 text-sm leading-relaxed font-mono">
-                      Unser Fokus liegt auf komplexen Hochbauprojekten mit hoher technischer und organisatorischer Anforderung.
+                      Unser Fokus liegt auf technisch und organisatorisch anspruchsvollen Hochbauprojekten.
                     </p>
                   </div>
 
@@ -216,18 +216,18 @@ function App() {
             <section className="py-32 bg-slate-950 relative">
               <div className="max-w-5xl mx-auto px-4 text-center">
                 <div className="inline-block px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-500/20 mb-8">
-                   <span className="text-cyan-400 font-bold text-[10px] uppercase tracking-widest font-mono">Projektsteuerung mit Datengrundlage</span>
+                   <span className="text-cyan-400 font-bold text-[10px] uppercase tracking-widest font-mono">Projektsteuerung mit belastbarer Datengrundlage</span>
                 </div>
                 <h2 className="text-5xl md:text-7xl font-bold text-white mb-10 tracking-tighter">
                   Lassen Sie uns Ihr <br/>
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Projekt strukturiert zum Ziel bringen.</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Projekt sicher zum Ziel führen.</span>
                 </h2>
                 <p className="text-slate-400 text-xl mb-12 max-w-2xl mx-auto font-light leading-relaxed">
-                  Vom Mediapark Köln aus steuern wir Ihr Projekt mit klaren Zuständigkeiten, transparentem Reporting und belastbaren Entscheidungsgrundlagen.
+                  Vom Mediapark Köln aus steuern wir Ihr Projekt mit klaren Zuständigkeiten, strukturiertem Reporting und belastbaren Entscheidungsgrundlagen.
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center gap-6">
                    <button onClick={() => handleNavigation('home', '#contact')} className="px-12 py-6 bg-white text-slate-950 font-bold rounded-lg hover:bg-cyan-400 transition-all shadow-xl hover:scale-105 active:scale-95 font-heading">
-                     Strategie-Gespräch anfragen
+                     Unverbindliches Erstgespräch
                    </button>
                    <a href="tel:022177269932" className="px-12 py-6 bg-slate-900 border border-white/10 text-white font-bold rounded-lg hover:border-cyan-500/50 transition-all backdrop-blur-md font-heading flex items-center justify-center gap-2">
                      <Phone className="w-4 h-4" /> +49 221 77269932

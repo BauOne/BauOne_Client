@@ -15,7 +15,7 @@ const allProjects = [
     year: "2022-2023",
     image: "https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?auto=format&fit=crop&q=80&w=1200",
     description: "Umfassende Bestandssanierung nach Schadensereignis mit komplexer Instandsetzung in bestehender Struktur.",
-    scope: "Projektsteuerungsleitungen KG 300 / 400 / 700",
+    scope: "Projektsteuerung KG 300 / 400 / 700",
     phases: ['LP 5', 'LP 6', 'LP 7', 'LP 8'],
     bgf: "ca. 8.500 m²"
   },
@@ -27,7 +27,7 @@ const allProjects = [
     year: "2024",
     image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80&w=1200",
     description: "Hochmoderner Neubau für Forschung und Produktion mit komplexen technischen Anforderungen an Reinräume und TGA.",
-    scope: "Projektmanagement Civil / Structural / Architectural Design",
+    scope: "Projektsteuerung Rohbau / Ausbau / Architektur",
     phases: ['LP 5', 'LP 6', 'LP 7', 'LP 8'],
     bgf: "ca. 12.300 m²"
   },
@@ -79,9 +79,9 @@ const ProjectsPage: React.FC<ProjectsPageProps> = ({ onBack }) => {
 
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
           <div className="max-w-2xl">
-            <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6">Referenz <span className="text-cyan-400">Projekte.</span></h1>
+            <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6">Referenz<span className="text-cyan-400">projekte.</span></h1>
             <p className="text-slate-400 text-lg">
-              Technische Exzellenz in der Umsetzung. Unser Track-Record in anspruchsvollen Sektoren.
+              Projektsteuerung in anspruchsvollen Bauvorhaben – mit klarem Leistungsbild und nachvollziehbaren Ergebnissen.
             </p>
           </div>
 

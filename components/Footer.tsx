@@ -37,7 +37,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </span>
             </div>
             <p className="text-slate-400 text-sm mb-6 leading-relaxed">
-              BauOne — Ihr Partner für innovatives Baumanagement und digitale Projektsteuerung im Hochbau. Wir definieren Effizienz durch BIM und KI neu.
+              BauOne — Ihr Partner für Projektsteuerung und Ingenieurmanagement im Hochbau. Wir verbinden technische Expertise mit strukturierter digitaler Steuerung.
             </p>
             {socialLinks.length > 0 && (
               <div className="flex gap-4">
@@ -54,8 +54,8 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <h5 className="text-white font-bold mb-6 font-heading">Leistungen</h5>
             <ul className="space-y-4 text-sm text-slate-400 font-mono">
               <li><button onClick={() => onNavigate('home', '#services')} className="hover:text-cyan-400 text-left">Projektsteuerung</button></li>
-              <li><button onClick={() => onNavigate('home', '#services')} className="hover:text-cyan-400 text-left">BIM Implementation</button></li>
-              <li><button onClick={() => onNavigate('home', '#services')} className="hover:text-cyan-400 text-left">Execution Support</button></li>
+              <li><button onClick={() => onNavigate('home', '#services')} className="hover:text-cyan-400 text-left">BIM-Koordination</button></li>
+              <li><button onClick={() => onNavigate('home', '#services')} className="hover:text-cyan-400 text-left">Ausführungsunterstützung</button></li>
               <li><button onClick={() => onNavigate('home', '#services')} className="hover:text-cyan-400 text-left">Kosten- & Terminplanung</button></li>
               <li><button onClick={() => onNavigate('home', '#services')} className="hover:text-cyan-400 text-left">Baustellenmanagement</button></li>
             </ul>

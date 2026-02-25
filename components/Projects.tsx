@@ -12,7 +12,7 @@ const projects = [
     category: "Forschung & Produktion",
     image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80&w=800",
     bgf: "ca. 12.300 m²",
-    scope: "Project Mgmt. Civil/Structural"
+    scope: "Projektsteuerung Rohbau / Ausbau"
   },
   {
     title: "Bestandssanierung nach Schadensereignis",
@@ -37,13 +37,13 @@ const Projects: React.FC<ProjectsProps> = ({ onSeeAll }) => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
             <h2 className="text-cyan-400 font-bold uppercase tracking-widest text-sm mb-4 font-mono">Ausgewählte Referenzen</h2>
-            <h3 className="text-4xl font-bold text-white">Komplexität <span className="italic text-slate-500">gemanagt.</span></h3>
+            <h3 className="text-4xl font-bold text-white">Komplexität <span className="italic text-slate-500">strukturiert gesteuert.</span></h3>
           </div>
           <button 
             onClick={onSeeAll}
             className="text-cyan-400 font-bold hover:text-cyan-300 transition-colors flex items-center gap-2 font-heading group"
           >
-            Alle Referenzen ansehen <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            Referenzen im Detail <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
 

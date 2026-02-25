@@ -15,7 +15,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
   const navLinks = [
     { name: 'Home', href: '#top', view: 'home' as View },
     { name: 'Leistungen', href: '#services', view: 'home' as View },
-    { name: 'BIM & KI', href: '#innovation', view: 'home' as View },
+    { name: 'Digitale Steuerung', href: '#innovation', view: 'home' as View },
     { name: 'Projekte', href: '#projects', view: 'projects' as View },
     { name: 'Über uns', href: '#about', view: 'home' as View },
     { name: 'Kontakt', href: '#contact', view: 'home' as View },
@@ -61,7 +61,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
               onClick={() => handleNavClick('home', '#contact')}
               className="px-5 py-2 bg-white text-slate-950 rounded-full text-sm font-bold font-heading hover:bg-cyan-400 transition-colors"
             >
-              Projekt anfragen
+              Erstgespräch anfragen
             </button>
           </div>
 
@@ -91,7 +91,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
             onClick={() => handleNavClick('home', '#contact')}
             className="w-full text-center py-3 bg-cyan-500 text-white rounded-xl font-bold font-heading mt-2"
           >
-            Projekt anfragen
+            Erstgespräch anfragen
           </button>
         </div>
       )}

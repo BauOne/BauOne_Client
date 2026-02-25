@@ -13,7 +13,7 @@ export const siteContent = {
     name: 'Florian Behrens',
     qualifications: [
       'M.Sc. Construction Project Management',
-      'B.Eng. Bauingenieurwesen',
+      'B.Eng. Bauingenieur',
       'Handwerksmeister',
     ],
     experienceSince: '2016',
@@ -28,9 +28,9 @@ export const siteContent = {
     vatId: '',
   },
   seo: {
-    title: 'BauOne | Digital Engineering & Project Management',
+    title: 'BauOne | Projektsteuerung & Ingenieurmanagement im Hochbau',
     description:
-      'BauOne ist Ihr Ingenieurbüro für Projektsteuerung, BIM und digitales Baumanagement im Hochbau. Fokus auf Kosten, Termine und Qualität.',
+      'BauOne ist Ihr Ingenieurbüro für Projektsteuerung und Ingenieurmanagement im Hochbau. Wir steuern Kosten, Termine und Qualität auf belastbarer Datengrundlage.',
     canonicalUrl: 'https://bauone.de/',
   },
   social: {

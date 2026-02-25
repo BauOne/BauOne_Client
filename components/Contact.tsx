@@ -34,9 +34,9 @@ const Contact: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-16">
           <div>
             <h2 className="text-cyan-400 font-bold uppercase tracking-widest text-sm mb-4 font-mono">Kontakt</h2>
-            <h3 className="text-4xl font-bold text-white mb-6">Starten wir Ihr <span className="text-cyan-400">nächstes Kapitel.</span></h3>
+            <h3 className="text-4xl font-bold text-white mb-6">Lassen Sie uns Ihr <span className="text-cyan-400">Projekt besprechen.</span></h3>
             <p className="text-slate-400 mb-10 text-lg">
-              Haben Sie ein konkretes Projekt oder möchten Sie mehr über unsere digitalen Workflows erfahren? Unser Team in Köln freut sich auf den Austausch.
+              Haben Sie ein konkretes Projekt oder möchten Sie Ihre Projektsteuerung neu aufstellen? Unser Team in Köln freut sich auf den Austausch.
             </p>
 
             <div className="space-y-8">
@@ -80,14 +80,14 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <label className="block text-xs font-bold text-slate-500 uppercase mb-2 ml-1 font-mono">Email</label>
-                  <input type="email" value={formData.email} onChange={(e) => setFormData((prev) => ({ ...prev, email: e.target.value }))} required className="w-full bg-slate-950/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors" placeholder="ihre@email.de" />
+                  <input type="email" value={formData.email} onChange={(e) => setFormData((prev) => ({ ...prev, email: e.target.value }))} required className="w-full bg-slate-950/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors" placeholder="name@unternehmen.de" />
                 </div>
               </div>
               <div>
                 <label className="block text-xs font-bold text-slate-500 uppercase mb-2 ml-1 font-mono">Betreff</label>
                 <select value={formData.subject} onChange={(e) => setFormData((prev) => ({ ...prev, subject: e.target.value }))} className="w-full bg-slate-950/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors appearance-none">
                   <option>Projektanfrage</option>
-                  <option>BIM / KI Beratung</option>
+                  <option>BIM-Beratung</option>
                   <option>Karriere</option>
                   <option>Sonstiges</option>
                 </select>
@@ -97,11 +97,11 @@ const Contact: React.FC = () => {
                 <textarea rows={4} value={formData.message} onChange={(e) => setFormData((prev) => ({ ...prev, message: e.target.value }))} required className="w-full bg-slate-950/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors" placeholder="Wie können wir helfen?"></textarea>
               </div>
               <button className="w-full py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold rounded-xl flex items-center justify-center gap-2 hover:opacity-90 transition-opacity font-heading">
-                Nachricht senden <Send className="w-4 h-4" />
+                Anfrage senden <Send className="w-4 h-4" />
               </button>
               {isSubmitted && (
                 <p className="text-emerald-400 text-xs font-mono text-center">
-                  Ihr E-Mail-Programm wurde mit vorausgefüllter Nachricht geöffnet.
+                  Ihr E-Mail-Programm wurde mit einer vorausgefüllten Nachricht geöffnet.
                 </p>
               )}
             </form>

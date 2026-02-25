@@ -92,9 +92,9 @@ const LegalPage: React.FC<LegalPageProps> = ({ onBack }) => {
             </div>
             <div className="prose prose-invert max-w-none text-slate-400 space-y-6">
                <h3 className="text-white font-bold text-xl">Haftung für Inhalte</h3>
-               <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Wir sind jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
+              <p>Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
                <h3 className="text-white font-bold text-xl">Haftung für Links</h3>
-               <p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+              <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für diese fremden Inhalte übernehmen wir keine Gewähr. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
             </div>
           </section>
 
@@ -110,17 +110,17 @@ const LegalPage: React.FC<LegalPageProps> = ({ onBack }) => {
             <div className="prose prose-invert max-w-none text-slate-400 space-y-6">
               <h3 className="text-white font-bold text-xl">1. Datenschutz auf einen Blick</h3>
               <p>
-                Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.
+                Die folgenden Hinweise geben einen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.
               </p>
 
               <h3 className="text-white font-bold text-xl">2. Datenerfassung auf unserer Website</h3>
               <p>
-                Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen. Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben.
+                Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Die Kontaktdaten finden Sie im Impressum. Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen, z. B. über das Kontaktformular.
               </p>
 
               <h3 className="text-white font-bold text-xl">3. Analyse-Tools und Tools von Drittanbietern</h3>
               <p>
-                Sofern Sie einwilligen, nutzen wir Google Analytics zur anonymisierten statistischen Auswertung der Website-Nutzung. Ohne Einwilligung werden keine Analyse-Cookies gesetzt und kein Tracking aktiviert.
+                Sofern Sie einwilligen, nutzen wir Google Analytics zur statistischen Auswertung der Website-Nutzung. Ohne Einwilligung werden keine Analyse-Cookies gesetzt und kein Tracking aktiviert.
               </p>
             </div>
           </section>
@@ -134,11 +134,11 @@ const LegalPage: React.FC<LegalPageProps> = ({ onBack }) => {
               <h2 className="text-4xl font-bold text-white">Cookie-Richtlinie</h2>
             </div>
             <div className="prose prose-invert max-w-none text-slate-400 space-y-6">
-               <p>Unsere Website verwendet Cookies. Das sind kleine Textdateien, die Ihr Webbrowser auf Ihrem Endgerät speichert. Cookies helfen uns dabei, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen.</p>
+              <p>Unsere Website verwendet Cookies. Das sind kleine Textdateien, die Ihr Browser auf Ihrem Endgerät speichert. Cookies helfen dabei, die Website technisch bereitzustellen und nutzerfreundlich zu gestalten.</p>
                <h3 className="text-white font-bold text-xl">Notwendige Cookies</h3>
-               <p>Einige Cookies sind für den technischen Betrieb der Website erforderlich (z. B. für die Navigation oder die Speicherung Ihrer Datenschutzeinstellungen). Diese Cookies können nicht deaktiviert werden.</p>
+              <p>Einige Cookies sind für den technischen Betrieb der Website erforderlich, z. B. für Navigation oder die Speicherung Ihrer Datenschutzeinstellungen. Diese Cookies können nicht deaktiviert werden.</p>
                <h3 className="text-white font-bold text-xl">Einstellungen verwalten</h3>
-               <p>Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des Browsers aktivieren.</p>
+              <p>Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, für bestimmte Fälle oder generell ausschließen sowie beim Schließen des Browsers automatisch löschen lassen.</p>
             </div>
           </section>
         </div>

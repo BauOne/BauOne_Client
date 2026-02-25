@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
               className="inline-flex items-center gap-3 px-3 py-1 bg-cyan-950/30 border-l-2 border-cyan-500 text-cyan-400 text-[11px] font-bold uppercase tracking-[0.2em] mb-8 font-mono"
             >
               <Cpu className="w-3.5 h-3.5" />
-              Projektsteuerung & Engineering aus Köln
+              Projektsteuerung & Ingenieurmanagement aus Köln
             </motion.div>
             
             <motion.h1 
@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
               className="text-6xl lg:text-8xl font-bold leading-[0.9] text-white mb-8 tracking-tighter"
             >
               Komplexe Projekte. <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-500">Datenbasiert gesteuert.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-500">Sicher gesteuert.</span>
             </motion.h1>
             
             <motion.p 
@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.7 }}
               className="text-xl text-slate-400 max-w-2xl mb-12 leading-relaxed font-light border-l border-white/10 pl-6"
             >
-              BauOne steuert Hochbauprojekte anhand definierter Leistungsbilder und messbarer Kennzahlen. Entscheidungen zu Kosten, Terminen und Qualität basieren auf konsolidierten Projekt- und Modelldaten.
+              Wir steuern komplexe Hochbauprojekte mit einem einheitlichen digitalen Datenstand, damit Entscheidungen zu Kosten, Terminen und Qualität jederzeit belastbar und nachweisfähig getroffen werden können.
             </motion.p>
             
             <motion.div 
@@ -63,10 +63,10 @@ const Hero: React.FC = () => {
               className="flex flex-wrap gap-4 mb-16"
             >
               <a href="#contact" className="px-8 py-4 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold flex items-center gap-3 transition-all font-heading rounded-lg hover:shadow-[0_0_20px_rgba(6,182,212,0.4)]">
-                Projekt anfragen <ChevronRight className="w-4 h-4" />
+                Erstgespräch anfragen <ChevronRight className="w-4 h-4" />
               </a>
               <a href="#services" className="px-8 py-4 bg-transparent border border-white/20 hover:border-cyan-500 text-white font-bold transition-all font-heading rounded-lg hover:bg-white/5">
-                Kompetenzen
+                Leistungen ansehen
               </a>
             </motion.div>
 
@@ -79,10 +79,10 @@ const Hero: React.FC = () => {
             >
               <div className="grid grid-cols-4 divide-x divide-white/10">
                 {[
-                  { label: "Engineering", value: "Technisch", icon: <Ruler className="w-3 h-3 text-cyan-400" /> },
-                  { label: "Management", value: "Präzise", icon: <Activity className="w-3 h-3 text-blue-400" /> },
-                  { label: "Digital", value: "Integriert", icon: <Server className="w-3 h-3 text-purple-400" /> },
-                  { label: "System", value: "Messbar", icon: <Radio className="w-3 h-3 text-emerald-400 animate-pulse" /> }
+                  { label: "Datenstand", value: "Einheitlich", icon: <Ruler className="w-3 h-3 text-cyan-400" /> },
+                  { label: "Prognosen", value: "Modellbasiert", icon: <Activity className="w-3 h-3 text-blue-400" /> },
+                  { label: "Entscheidungen", value: "Nachweisfähig", icon: <Server className="w-3 h-3 text-purple-400" /> },
+                  { label: "Reporting", value: "Echtzeitnah", icon: <Radio className="w-3 h-3 text-emerald-400 animate-pulse" /> }
                 ].map((item, i) => (
                   <div key={i} className="py-4 px-2 lg:px-6 flex flex-col justify-center">
                     <div className="flex items-center gap-2 mb-1 opacity-70">

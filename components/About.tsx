@@ -35,9 +35,9 @@ const About: React.FC = () => {
 
           <div>
             <h2 className="text-cyan-400 font-bold uppercase tracking-widest text-sm mb-4 font-mono">Unsere DNA</h2>
-            <h3 className="text-4xl font-bold text-white mb-6">Wir steuern Bauwesen <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">neu.</span></h3>
+            <h3 className="text-4xl font-bold text-white mb-6">Wir steuern Bauprojekte <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">verlässlich.</span></h3>
             <p className="text-slate-400 text-lg mb-8 leading-relaxed">
-              BauOne wurde gegründet, um Bauherren eine neue Qualität der Projektsteuerung zu bieten. Wir sind kein klassisches Ingenieurbüro – wir sind Ihr Technologiepartner für Baumanagement. Wir nutzen digitale Tools, um Transparenz in Prozesse zu bringen, die sonst unübersichtlich bleiben.
+              BauOne wurde gegründet, um Bauherren eine verlässliche Projektsteuerung zu bieten. Als Ingenieurbüro verbinden wir technische Expertise mit einem digitalen Betriebsmodell, damit auch komplexe Projekte mit einheitlichem Datenstand steuerbar bleiben.
             </p>
             
             <div className="space-y-6">
@@ -55,8 +55,8 @@ const About: React.FC = () => {
                   <Zap className="text-blue-400 group-hover:text-white w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="text-white font-bold mb-1 font-heading">Digitale Klarheit</h4>
-                  <p className="text-sm text-slate-500">Egal wie Ihre Partner arbeiten – wir digitalisieren Ihre Projektdaten intern für maximale Kontrolle.</p>
+                  <h4 className="text-white font-bold mb-1 font-heading">Nachvollziehbare Steuerung</h4>
+                  <p className="text-sm text-slate-500">Egal wie Ihre Partner arbeiten – wir konsolidieren Projektdaten zu einem einheitlichen digitalen Datenstand für klare Entscheidungen und belastbares Reporting.</p>
                 </div>
               </div>
               <div className="flex gap-4 p-4 rounded-2xl hover:bg-white/5 transition-colors group">
@@ -64,8 +64,8 @@ const About: React.FC = () => {
                   <Users className="text-purple-400 group-hover:text-white w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="text-white font-bold mb-1 font-heading">Erfahrung trifft Innovation</h4>
-                  <p className="text-sm text-slate-500">Klassische Ingenieur-Expertise im Mediapark Köln, kombiniert mit modernster Management-Software.</p>
+                  <h4 className="text-white font-bold mb-1 font-heading">Erfahrung trifft Systematik</h4>
+                  <p className="text-sm text-slate-500">Ingenieur-Expertise im Mediapark Köln, kombiniert mit klaren Methoden und digitaler Prozessführung für Termin-, Kosten- und Qualitätssteuerung.</p>
                 </div>
               </div>
             </div>
@@ -93,7 +93,7 @@ const About: React.FC = () => {
 
             <div className="md:col-span-8 lg:col-span-9">
               <blockquote className="text-2xl md:text-3xl font-light text-white leading-relaxed mb-8">
-                "In einer Branche, die von Unvorhersehbarkeit geprägt ist, ist Datenhoheit die einzige Währung, die zählt. Wir haben BauOne nicht nur gegründet, um besser zu bauen, sondern um das Bauen <span className="text-cyan-400 font-medium">berechenbarer</span> zu machen."
+                "In komplexen Bauprojekten braucht es klare Verantwortung und eine belastbare Datengrundlage. Unser Anspruch ist es, Projekte so zu steuern, dass Entscheidungen nachvollziehbar und Ergebnisse verlässlich sind."
               </blockquote>
               
               <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 border-t border-white/10 pt-8">

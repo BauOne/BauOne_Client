@@ -17,17 +17,21 @@ const Innovation: React.FC = () => {
               <div className="w-12 h-12 rounded-2xl bg-cyan-500/10 flex items-center justify-center border border-cyan-500/20">
                 <Workflow className="text-cyan-400 w-6 h-6" />
               </div>
-              <h2 className="text-cyan-400 font-bold uppercase tracking-widest text-[10px] font-mono">The Digital Core</h2>
+              <h2 className="text-cyan-400 font-bold uppercase tracking-widest text-[10px] font-mono">Digitales Steuerungsmodell</h2>
             </div>
             
             <h3 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-8 tracking-tighter leading-[1.1] break-words">
-              Vom Daten-Chaos zur <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 italic">digitalen Handlungssicherheit.</span>
+            Von verteilten Daten zur <br/>
+               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 italic">messbaren Wertschöpfung.</span>
             </h3>
             
             <p className="text-xl text-slate-400 mb-10 leading-relaxed font-light">
-                     Bauprojekte geraten oft ins Risiko, wenn Informationen verteilt und unvollständig sind. Wir führen Daten strukturiert zusammen und schaffen eine belastbare Grundlage für Entscheidungen.
+               Bauprojekte verlieren Zeit und Budget, wenn Informationen verteilt und unvollständig sind. Wir führen Daten strukturiert zusammen, damit Risiken früher erkannt und Entscheidungen schneller belastbar getroffen werden.
             </p>
+
+                  <p className="text-sm text-slate-500 mb-10 leading-relaxed font-mono border-l border-cyan-500/40 pl-4">
+                     Unser Unterschied: Wir nutzen digitale Methoden nicht als Zusatztool, sondern als durchgängigen Steuerungsprozess zwischen Planung, Ausführung und Reporting.
+                  </p>
 
             <div className="space-y-8">
                <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 group">
@@ -35,8 +39,8 @@ const Innovation: React.FC = () => {
                     <Binary className="text-cyan-400 w-8 h-8" />
                  </div>
                  <div>
-                    <h5 className="text-white font-bold text-lg mb-1 uppercase tracking-tighter font-heading">Input-Agnostik</h5>
-                              <p className="text-sm text-slate-500 leading-relaxed">Wir verarbeiten unterschiedliche Eingangsformate: von Planständen und Excel bis zu IFC-Modellen. So bleibt der Informationsfluss konsistent.</p>
+                    <h5 className="text-white font-bold text-lg mb-1 uppercase tracking-tighter font-heading">Strukturierte Datenerfassung</h5>
+                              <p className="text-sm text-slate-500 leading-relaxed">Wir verarbeiten unterschiedliche Eingangsformate: von Planständen und Excel bis zu IFC-Modellen. So entsteht ein einheitlicher Datenstand statt fragmentierter Einzelinformationen.</p>
                  </div>
                </div>
                <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 group">
@@ -44,8 +48,8 @@ const Innovation: React.FC = () => {
                     <Cpu className="text-blue-400 w-8 h-8" />
                  </div>
                  <div>
-                    <h5 className="text-white font-bold text-lg mb-1 uppercase tracking-tighter font-heading">Shadow-Logic Engine</h5>
-                                             <p className="text-sm text-slate-500 leading-relaxed">Aus den Eingangsdaten entsteht im Hintergrund ein konsolidiertes Arbeitsmodell. Dieses prüft laufend Konflikte, Mengen und Terminwirkungen, damit Risiken früh erkannt und adressiert werden können.</p>
+                    <h5 className="text-white font-bold text-lg mb-1 uppercase tracking-tighter font-heading">Konsolidiertes Prüfmodell</h5>
+                                             <p className="text-sm text-slate-500 leading-relaxed">Aus den Eingangsdaten entsteht ein konsolidiertes Arbeitsmodell. Dieses prüft laufend Konflikte, Mengen und Terminwirkungen, sodass Reibungsverluste vor der Ausführung reduziert werden.</p>
                  </div>
                </div>
             </div>
@@ -62,13 +66,13 @@ const Innovation: React.FC = () => {
               <div className="w-full max-w-md bg-slate-900/80 backdrop-blur-md border border-white/10 rounded-2xl p-4 sm:p-6 relative z-10">
                  <div className="absolute -left-3 top-1/2 -translate-y-1/2 w-1 h-12 bg-slate-700 rounded-full"></div>
                  <h4 className="text-slate-400 font-bold text-[10px] uppercase tracking-widest mb-4 font-mono flex justify-between">
-                    <span>01. Ingest (Raw Data)</span>
-                    <span className="text-slate-600">Unstructured</span>
+                    <span>01. Dateneingang</span>
+                    <span className="text-slate-600">Unstrukturiert</span>
                  </h4>
                  <div className="grid grid-cols-2 gap-4 opacity-50 grayscale">
                     <div className="flex flex-col items-center gap-2">
                        <FileText className="w-8 h-8 text-slate-400" />
-                       <span className="text-[9px] font-mono">PDF Pläne</span>
+                       <span className="text-[9px] font-mono">PDF-Pläne</span>
                     </div>
                     <div className="flex flex-col items-center gap-2">
                        <Layout className="w-8 h-8 text-slate-400" />
@@ -97,7 +101,7 @@ const Innovation: React.FC = () => {
                  
                  <div className="flex items-center justify-between mb-2">
                     <h4 className="text-cyan-400 font-bold text-[10px] uppercase tracking-widest font-mono">
-                       02. BauOne Refinery
+                       02. BauOne Datenaufbereitung
                     </h4>
                     <div className="flex gap-1">
                        <div className="w-1.5 h-1.5 bg-cyan-500 rounded-full animate-pulse"></div>
@@ -116,14 +120,14 @@ const Innovation: React.FC = () => {
                           <div className="h-full bg-gradient-to-r from-cyan-500 to-blue-500 w-[85%]"></div>
                        </div>
                        <div className="flex justify-between text-[9px] font-mono text-cyan-300">
-                          <span>Normalizing Geometry...</span>
+                          <span>Daten werden strukturiert...</span>
                           <span>85%</span>
                        </div>
                        <div className="flex flex-wrap gap-2 mt-2">
                           <span className="px-2 py-1 bg-cyan-950 border border-cyan-500/20 rounded text-[9px] text-cyan-400">IFC 4.0</span>
                           <span className="px-2 py-1 bg-cyan-950 border border-cyan-500/20 rounded text-[9px] text-cyan-400">PDF</span>
                           <span className="px-2 py-1 bg-cyan-950 border border-cyan-500/20 rounded text-[9px] text-cyan-400">Excel</span>
-                          <span className="px-2 py-1 bg-cyan-950 border border-cyan-500/20 rounded text-[9px] text-cyan-400">Validierung</span>
+                          <span className="px-2 py-1 bg-cyan-950 border border-cyan-500/20 rounded text-[9px] text-cyan-400">Plausibilisierung</span>
                        </div>
                     </div>
                  </div>
@@ -138,8 +142,8 @@ const Innovation: React.FC = () => {
               <div className="w-full max-w-2xl bg-gradient-to-br from-slate-900 to-slate-800 border border-white/10 rounded-2xl p-4 sm:p-6 relative z-10 group hover:border-emerald-500/50 transition-colors">
                  <div className="absolute -left-3 top-1/2 -translate-y-1/2 w-1 h-12 bg-emerald-500 rounded-full"></div>
                  <h4 className="text-emerald-400 font-bold text-[10px] uppercase tracking-widest mb-4 font-mono flex items-center justify-between gap-3">
-                    <span>03. Management Value</span>
-                    <span className="text-white">Actionable</span>
+                    <span>03. Wertschöpfung für das Projekt</span>
+                    <span className="text-white">Umsetzbar</span>
                  </h4>
 
                  <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
@@ -151,8 +155,8 @@ const Innovation: React.FC = () => {
                           </div>
                           <span className="text-[9px] text-emerald-300 font-mono">01</span>
                        </div>
-                       <div className="text-sm font-bold text-white mb-1 leading-tight">Aktiv gesteuert</div>
-                       <p className="text-[10px] text-slate-500 font-mono leading-relaxed">Abweichungen früh priorisiert.</p>
+                       <div className="text-sm font-bold text-white mb-1 leading-tight">Früh erkannt</div>
+                       <p className="text-[10px] text-slate-500 font-mono leading-relaxed">Abweichungen werden vor Eskalation priorisiert und dokumentiert.</p>
                     </div>
                     <div className="bg-slate-950 p-4 rounded-lg border border-blue-500/20 min-h-[118px] flex flex-col justify-between">
                        <div className="flex items-center justify-between mb-2">
@@ -162,8 +166,8 @@ const Innovation: React.FC = () => {
                           </div>
                           <span className="text-[9px] text-blue-300 font-mono">02</span>
                        </div>
-                       <div className="text-sm font-bold text-white mb-1 leading-tight">Belastbar bewertet</div>
-                       <p className="text-[10px] text-slate-500 font-mono leading-relaxed">Konkrete Maßnahmen ableitbar.</p>
+                       <div className="text-sm font-bold text-white mb-1 leading-tight">Schneller entschieden</div>
+                       <p className="text-[10px] text-slate-500 font-mono leading-relaxed">Maßnahmen sind datenbasiert, priorisiert und direkt ableitbar.</p>
                     </div>
                     <div className="bg-slate-950 p-4 rounded-lg border border-purple-500/20 min-h-[118px] flex flex-col justify-between">
                        <div className="flex items-center justify-between mb-2">
@@ -173,8 +177,8 @@ const Innovation: React.FC = () => {
                           </div>
                           <span className="text-[9px] text-purple-300 font-mono">03</span>
                        </div>
-                       <div className="text-sm font-bold text-white mb-1 leading-tight">Nachvollziehbar gesichert</div>
-                       <p className="text-[10px] text-slate-500 font-mono leading-relaxed">Prüfstände klar dokumentiert.</p>
+                                  <div className="text-sm font-bold text-white mb-1 leading-tight">Sauber dokumentiert</div>
+                                  <p className="text-[10px] text-slate-500 font-mono leading-relaxed">Prüfstände und Verantwortlichkeiten sind klar belegt.</p>
                     </div>
                  </div>
               </div>
