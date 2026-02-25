@@ -125,7 +125,7 @@ const Services: React.FC<ServicesProps> = ({ onNavigate }) => {
               
               <div className="mb-8">
                 <span className="text-cyan-400 text-[10px] font-bold uppercase tracking-widest block mb-2 font-mono">{pillar.for}</span>
-                <h4 className="text-3xl font-bold text-white mb-2 leading-none">{pillar.title}</h4>
+                <h4 className="text-[clamp(1.05rem,1.75vw,1.6rem)] font-bold text-white mb-2 leading-tight whitespace-nowrap">{pillar.title}</h4>
                 <p className="text-slate-500 text-sm italic">{pillar.subtitle}</p>
               </div>
 
